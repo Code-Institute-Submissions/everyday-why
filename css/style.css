@@ -1,46 +1,95 @@
+
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
 
+
+
 body {
-  font-family: "Libre Franklin", sans-serif;
-  font-family: "Libre Baskerville", serif;
+  background-color:#C0D8D2;
   
 }
+
+/*Header*/
+
+
+
+
 
 nav {
     font-family: "Libre Franklin", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    background-color: #1F544D;
+    font-weight: 500;
+    font-size: 0.8em;
+     background-color: #1F544D;
     height: 200px;
-    padding: 80px 50px;
+    padding: 80px 60px;
+    text-transform: uppercase;
+    border-bottom: 10px solid #FFDB26;
     
+    
+    
+}
+nav a{
+     color: #fff;
+     text-decoration: line-through;
+   text-decoration-color: #1F544D; 
     
 }
 
-nav a{
-    color: #B8E3EB;
-    
-  
-}
 
 nav a:hover {
 color: #FFDB26;
 }
 
-
-
-.logo {
-    position:absolute;
-    float: left;
-    left: 50px;
-    top: 60px;
-    
+.active  {
+     color: #FFDB26;
+    font-weight: 700;
+    text-decoration: none;
    
+    
 }
 
 .logo img {
     height: 65px;
     width: auto;
+    position:absolute;
+    float: left;
+    left: 50px;
+    right: 50px;
+    top: 60px;
+    
+     
+
 }
+
+
+/*Jumbotron*/
+
+.jumbotron {
+    
+    color: #1F544D;
+    margin: 0;
+    border-bottom: 2px solid #1F544D; 
+    
+    
+
+}
+
+.jumbotron .welcome-text {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.3em;
+    padding: 0 60px;
+    
+}
+
+.jumbotron .welcome-text span {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 900;
+      font-style:italic;
+      font-size: 1.1em;
+      padding: 0 10px 0 8px;
+      text-decoration: line-through;
+      text-decoration-color: #FFDB26;
+      
+      
+} 
 
 
