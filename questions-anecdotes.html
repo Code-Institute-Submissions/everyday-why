@@ -15,9 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--font awesome-->
     <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
     <!--bootstrap-->
@@ -33,22 +33,53 @@
 
   <body>
     <header>
-      <nav class="nav justify-content-end">
-        <a class="nav-link logo" href="questions-anecdotes.html">
-          <img src="images/EverydayWhyLogo-05.svg" alt="Everyday Why Logo" />
-        </a>
-        <a class="nav-link active" href="questions-anecdotes.html"
-          >Questions & Anecdotes</a
-        >
-        <a class="nav-link" href="#">Gallery</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
+      <div class="container-fluid">
+        <div class="row align-items-center" id="nav">
+          <a
+            href="questions-anecdotes.html"
+            class="col-4 offset-4 col-md-3 offset-md-1 col-sm-4 offset-sm-4  logo"
+          >
+          </a>
+          <div class="col-12 col-md-7 ">
+            <ul class="menucontainer">
+              <li class="col-auto col-md-12 list-inline-item">
+                <a
+                  href="questions-anecdotes.html"
+                  class="active-link nav-item"
+                  ><i class="fa fa-book" aria-hidden="true"></i
+                  ><span> Questions & Anecdotes</span></a
+                >
+              </li>
+              <li class="col-auto col-md-12  list-inline-item">
+                <a href="#" class="nav-item"
+                  ><i class="fa fa-arrow-down" aria-hidden="true"></i
+                  ><span>Resources</span></a
+                >
+              </li>
+              <li class="col-auto col-md-12 col-sm-auto list-inline-item">
+                <a href="#" class="nav-item"
+                  ><i class="fa fa-file-text" aria-hidden="true"></i>
+                  <span>about</span></a
+                >
+              </li>
+              <li class="col-auto col-md-12 col-sm-auto list-inline-item">
+                <a href="#" class="nav-item"
+                  ><i class="fa fa-send" aria-hidden="true"></i>
+                  <span>Say Hello</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </header>
+
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <p class="lead welcome-text text-center" >
-          A collection of Questions and Anecdotes on<span>Life</span>and it's<span>Purpose.</span>
+        <p class="lead welcome-text text-center">
+          A collection of Questions and Anecdotes on<span>Life</span>and
+          it's<span>Purpose.</span>
         </p>
       </div>
     </div>

@@ -1,95 +1,116 @@
-
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
 
-
-
 body {
-  background-color:#C0D8D2;
-  
+  background-color: #c0d8d2;
 }
 
 /*Header*/
 
-
-
-
-
-nav {
-    font-family: "Libre Franklin", sans-serif;
-    font-weight: 500;
-    font-size: 0.8em;
-     background-color: #1F544D;
-    height: 200px;
-    padding: 80px 60px;
-    text-transform: uppercase;
-    border-bottom: 10px solid #FFDB26;
-    
-    
-    
-}
-nav a{
-     color: #fff;
-     text-decoration: line-through;
-   text-decoration-color: #1F544D; 
-    
+#nav {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: #1f544d;
+  min-height: 200px;
+  border-bottom: 10px solid #ffdb26;
 }
 
-
-nav a:hover {
-color: #FFDB26;
+#nav .col-md-7 {
+  text-align: right;
 }
 
-.active  {
-     color: #FFDB26;
-    font-weight: 700;
-    text-decoration: none;
-   
+#nav .nav-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75em;
+  color: #c0d8d2;
+  padding-top: 15px;
+}
+
+#nav .nav-item span {
+  padding-left: 5px;
+}
+
+#nav .list-inline-item .active-link {
+  color: #ffdb26;
+  font-weight: 700;
+}
+
+#nav a {
     
+  color: #fff;
+  text-decoration: line-through;
+  text-decoration-color: #1f544d;
 }
 
-.logo img {
-    height: 65px;
-    width: auto;
-    position:absolute;
-    float: left;
-    left: 50px;
-    right: 50px;
-    top: 60px;
-    
-     
-
+#nav a:hover {
+  color: #ffdb26;
 }
 
+#nav .menucontainer {
+
+    padding-top:10px;
+}
+
+#nav .menucontainer .active-link  {
+  color: #ffdb26;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo {
+  background: url("../images/EverydayWhyLogo-05.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 60px;
+}
 
 /*Jumbotron*/
 
 .jumbotron {
-    
-    color: #1F544D;
-    margin: 0;
-    border-bottom: 2px solid #1F544D; 
-    
-    
-
+  color: #1f544d;
+  margin: 0;
+  border-bottom: 2px solid #1f544d;
 }
 
 .jumbotron .welcome-text {
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 1.3em;
-    padding: 0 60px;
-    
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.3em;
+  padding: 0 60px;
 }
 
 .jumbotron .welcome-text span {
-      font-family: "Libre Baskerville", serif;
-      font-weight: 900;
-      font-style:italic;
-      font-size: 1.1em;
-      padding: 0 10px 0 8px;
-      text-decoration: line-through;
-      text-decoration-color: #FFDB26;
-      
-      
-} 
+  font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 0 10px 0 8px;
+  text-decoration: line-through;
+  text-decoration-color: #ffdb26;
+}
 
+/*Media Queries*/
 
+@media only screen and (max-width: 1102px) {
+  .menucontainer {
+    display: none;
+  }
+
+  #nav {
+    min-height: 100px;
+  }
+
+  .logo {
+    background: url("../images/Isotype.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 60px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+   #nav {
+  padding-top: 10px;
+}
+  }
