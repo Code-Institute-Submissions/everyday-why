@@ -21,7 +21,7 @@ body {
 
 .navbar-header,
 .navbar-nav {
-  padding: 50px 8% 50px 10%;
+  padding: 50px 8% 50px 8%;
 }
 
 .navbar-header .navbar-toggle {
@@ -34,6 +34,7 @@ body {
 }
 
 #nav .link {
+    text-transform: uppercase;
   font-weight: 500;
   font-size: 1em;
   color: #c0d8d2;
@@ -57,7 +58,7 @@ body {
 }
 
 #nav .active-link {
-    font-family: "Libre Baskerville", serif;
+    /* font-family: "Libre Baskerville", serif; */
   color: #ffdb26;
   font-weight: 700;
   text-decoration: none;
@@ -102,7 +103,7 @@ body {
 
 /*Media Queries*/
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .navbar-header {
     float: none;
   }
@@ -130,7 +131,7 @@ body {
   }
   .navbar-nav > li {
     float: none;
-    margin-top: -10px;
+    /* margin-top: -10px; */
   }
   .navbar-nav > li > a {
     padding-top: 10px;
@@ -143,11 +144,18 @@ body {
     min-height: 50px;
     top: 27px;
   }
+ 
+
 
   .navbar-collapse {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
   }
+   .navbar-collapse .active-link {
+    font-size: 1.3em;
+  }
+
+  
 
   .navbar-header,
   .navbar-nav {
