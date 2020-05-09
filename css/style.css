@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
 
 body {
-  background-color: #1f544d;
+  background-color: #1b3a32;
 }
 
 /*----------------------------------------------Header----------------------------------------*/
@@ -10,11 +10,14 @@ body {
   border-radius: 0;
   margin: 0 auto;
   border: 0;
+  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
+    -30px 30px 10px rgba(0, 0, 0, 0.035),
+    -55px -30px 90px rgba(0, 0, 0, 0.336) inset;
 }
 
 #nav {
   font-family: "Libre Franklin", sans-serif;
-  border-bottom: 5px solid #ffdb26;
+  border-bottom: 2px solid #ffdb26;
   background-color: #1b3a32;
 }
 
@@ -71,8 +74,6 @@ body {
   padding: 7% 0%;
   font-size: 1em;
   text-transform: none;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 900;
   right: 0;
   opacity: 98%;
   box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
@@ -82,23 +83,16 @@ body {
   border-radius: 3px;
   overflow: auto;
   height: auto;
-  max-height: 355px;
+  max-height: 270px;
 }
 
 #nav-collapsible .dropdown-menu li {
   border-bottom: 1px solid #1f544d;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 #nav-collapsible .dropdown-menu li:last-child {
   border-bottom: 0px;
-}
-
-#nav-collapsible .dropdown-menu li a {
-  transition: background-color 0.5s;
-}
-
-#nav-collapsible .dropdown-menu li a:hover {
-  background-color: #1f544d;
 }
 
 #nav-collapsible .active-link .fa {
@@ -111,24 +105,36 @@ body {
 
 #nav a:hover {
   color: #ffdb26;
-  background-color: #1b3a32;
+  background-color: transparent;
 }
 #nav-collapsible .dropdown .dropdown-toggle {
-  background-color: #1b3a32;
+  background-color: transparent;
 }
 #nav-collapsible .dropdown .dropdown-toggle:active {
-  background-color: #1b3a32;
+  background-color: transparent;
 }
 
 #nav-collapsible .dropdown .dropdown-toggle:link {
-  background-color: #1b3a32;
+  background-color: transparent;
 }
 
 #nav-collapsible .dropdown .dropdown-toggle:focus {
-  background-color: #1b3a32;
+  background-color: transparent;
 }
 
 #nav-collapsible .dropdown .dropdown-toggle:hover {
+  background-color: transparent;
+}
+
+#nav-collapsible .dropdown-menu li a:hover {
+  background-color: #1f544d;
+}
+
+#nav-collapsible .dropdown-menu li a:active {
+  background-color: #1b3a32;
+}
+
+#nav-collapsible .dropdown-menu li a:focus {
   background-color: #1b3a32;
 }
 
@@ -139,6 +145,7 @@ body {
   background-size: auto;
   position: absolute;
   top: 30px;
+  padding-left: 10%;
   min-height: 100px;
   width: 200px;
   height: auto;
@@ -147,52 +154,130 @@ body {
 /*----------------------------------------------Jumbotron----------------------------------------*/
 
 .jumbotron {
-  color: #c0d8d2;
-  margin: 0;
-  border-bottom: 2px solid #1f544d;
+  color: #fff;
+  margin: 0 auto;
   background-color: #1f544d;
+  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
+    -30px 30px 10px rgba(0, 0, 0, 0.035);
+  background-image: radial-gradient(circle, #1f544d, #1b3a32);
+  border: 0;
+  padding: 100px 10% 100px 10%;
 }
 
 .jumbotron .welcome-text {
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1.3em;
-  padding: 0 60px;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron .welcome-text small {
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.6em;
+  font-weight: 100;
+  display: inline-block;
+  color: #ffdb26;
+  margin: 0;
+  border: 0;
 }
 
 .jumbotron .welcome-text span {
+  color: #fff;
   font-family: "Libre Baskerville", serif;
   font-weight: 900;
   font-style: italic;
   font-size: 1.1em;
-  padding: 0 10px 0 8px;
-  text-decoration: line-through;
+  text-decoration: underline;
   text-decoration-color: #ffdb26;
 }
 
 /*----------------------------------------------Articles----------------------------------------*/
-.article-block .panel-group {
-    padding: 10% 10% 50px 10%;
-    margin:0 auto;
+.article-collection-bg {
+  background-color: #cbe4de;
+  /* box-shadow: -55px -30px 190px rgba(0, 0, 0, 0.055) inset,
+    -20px -10px 990px rgba(0, 0, 0, 0.747) inset; */
+    
+     padding: 5% 10% 5% 10%;
 }
 
-.article-block .panel-group .panel{
-    border: 1px solid #1f544d;
-    
+.article-block .panel-group {
+  width:100%;
+  margin: 0 auto;
+}
+
+.article-block .panel-group .panel {
+  border: 0;
+  border-radius: 3px;
 }
 
 .article-block .panel-group .panel-heading {
-    background-color: #1b3a32;
-    
+  background-color: #1f544d;
+  padding: 2% 3%;
 }
 
-.article-block .panel-group .panel a{
-    color:#ffdb26;
-   font-family: "Libre Franklin", sans-serif;
-   font-weight: 700;
-   padding:0;
-   margin: 0 auto;
-   width: 100%;
-   font-size: 1.3em;
+.article-block .panel-group .panel a {
+  line-height: 1em;
+  color: #cbe4de;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 100;
+  font-size: 3em;
+  padding-right: 20%;
+}
+
+
+
+.article-block .panel-group .panel #article-one {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.article-block .panel-group .panel .panel-body {
+  background-color: #1b3a32;
+  color: #cbe4de;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  padding: 5% 5%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  text-align: justify;
+  max-height: 500px;
+  overflow: auto;
+}
+.artwork {
+  background: url("../images/The Anatomy of a Question.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 600px;
+  border-top: 1px solid #c0d8d2;
+  
+}
+
+.article-block .panel-group .panel a:before {
+  float: right !important;
+  font-family: FontAwesome;
+  content: "\f068";
+  padding-right: 5px;
+  font-size: 0.5em;
+}
+.article-block .panel-group .panel a.collapsed:before {
+    float: right !important;
+    content: "\f067";
+}
+
+.article-block .panel-group .panel a:hover {
+  text-decoration: none;
+  color: #ffdb26;
+}
+.article-block .panel-group .panel a:active {
+  text-decoration: none;
+  color: #ffdb26;
+}
+.article-block .panel-group .panel a:focus {
+  text-decoration: none;
+  color: #ffdb26;
 }
 /*----------------------------------------------Custom Scrollbar----------------------------------------*/
 
@@ -203,7 +288,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* Handle */
@@ -217,7 +302,8 @@ body {
   background: #8aa3a0;
 }
 
-/*----------------------------------------------Animations----------------------------------------*/
+/*----------------------------------------------Animations for dropdown menu----------------------------------------*/
+/* fade-in animation keyframes */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -226,7 +312,39 @@ body {
     opacity: 1;
   }
 }
-
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* fade-out animation keyframes*/
 @keyframes fade-out {
   from {
     opacity: 1;
@@ -235,7 +353,47 @@ body {
     opacity: 0;
   }
 }
-
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-ms-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* toggle-down animation keyframes*/
 @keyframes toggle-down {
   0% {
     transform: rotate(0deg);
@@ -247,7 +405,51 @@ body {
     transform: rotate(90deg);
   }
 }
-
+@-webkit-keyframes toggle-down {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@-moz-keyframes toggle-down {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@-o-keyframes toggle-down {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@-ms-keyframes toggle-down {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+/* toggle-up animation keyframes */
 @keyframes toggle-up {
   0% {
     transform: rotate(0deg);
@@ -259,28 +461,85 @@ body {
     transform: rotate(-90deg);
   }
 }
+@-webkit-keyframes toggle-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+@-moz-keyframes toggle-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+@-o-keyframes toggle-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+@-ms-keyframes toggle-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+/* animation rules */
+
+#nav-collapsible .dropdown-menu li a {
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+}
 
 #nav-collapsible .dropdown:hover > .dropdown-menu {
   opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 0.25s;
-  animation-timing-function: ease-in-out;
+  animation: fade-in ease-in-out 0.25s;
+  -webkit-animation: fade-in ease-in-out 0.25s;
+  -moz-animation: fade-in ease-in-out 0.25s;
+  -o-animation: fade-in ease-in-out 0.25s;
+  -ms-animation: fade-in ease-in-out 0.25s;
 }
 
 #nav-collapsible .dropdown:hover > .active-link > .fa-caret-right {
   transform: rotate(0deg);
-  animation-name: toggle-down;
-  animation-duration: 0.1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: step-end;
+  animation: toggle-down step-end 0.1s forwards;
+  -webkit-animation: toggle-down step-end 0.1s forwards;
+  -moz-animation: toggle-down step-end 0.1s forwards;
+  -o-animation: toggle-down step-end 0.1s forwards;
+  -ms-animation: toggle-down step-end 0.1s forwards;
 }
 
 #nav-collapsible .dropdown-menu li a:hover > .fa-caret-down {
   transform: rotate(0deg);
-  animation-name: toggle-up;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
-  animation-timing-function: step-end;
+  animation: toggle-up step-end 0.4s forwards;
+  -webkit-animation: toggle-up step-end 0.4s forwards;
+  -moz-animation: toggle-up step-end 0.4s forwards;
+  -o-animation: toggle-up step-end 0.4s forwards;
+  -ms-animation: toggle-up step-end 0.4s forwards;
 }
 
 /*----------------------------------------------Media Queries----------------------------------------*/
@@ -349,6 +608,15 @@ body {
     padding-top: 2px;
     padding-bottom: 2px;
   }
+
+  .article-block .panel-group .panel a { 
+  font-size: 1.5em;
+  padding-right: 30%;
+  
+}
+
+
+
 }
 
 @media (max-width: 576px) {
