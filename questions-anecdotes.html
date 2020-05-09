@@ -21,12 +21,13 @@
       crossorigin="anonymous"
     />
     <!--bootstrap-->
-    <!--bootstrap-->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Everyday Why</title>
@@ -34,60 +35,288 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-inverse navbar-expand" id="nav">
-      <div class="container-fluid ">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#nav-collapsible"
-          >
-           <i class="fa fa-bars" aria-hidden="true"></i>
-          </button>
-          <a href="questions-anecdotes.html" class="navbar-brand logo"></a>
+      <nav class="navbar navbar-default navbar-expand" id="nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#nav-collapsible"
+            >
+              <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </button>
+            <a href="questions-anecdotes.html" class="navbar-brand logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="nav-collapsible">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="link dropdown">
+                <a
+                  href="questions-anecdotes.html"
+                  class="active-link active dropdown-toggle"
+                  data-toggle="dropdown"
+                  ><i class="fa fa-book" aria-hidden="true"></i
+                  ><span> Questions & Anecdotes </span
+                  ><i class="fa fa-caret-right" aria-hidden="true"> </i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i> The
+                      Anatomy of a Question</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Genesis</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Identity</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Origin</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i> The
+                      Destination</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Hope</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i> Trust
+                      Issues</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Love</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i> True
+                      Riches</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Thinking of You</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Praise-Think</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Different-Think</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Excellence-Think</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      Little Things, Big Difference</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i> The
+                      King is Coming</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="link">
+                <a href="#"
+                  ><i class="fa fa-arrow-down" aria-hidden="true"></i
+                  ><span>Resources</span></a
+                >
+              </li>
+              <li class="link">
+                <a href="#"
+                  ><i class="fa fa-file-text" aria-hidden="true"></i>
+                  <span>About</span></a
+                >
+              </li>
+              <li class="link">
+                <a href="#"
+                  ><i class="fa fa-send" aria-hidden="true"></i>
+                  <span>Say Hello</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="nav-collapsible">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="link">
-              <a href="questions-anecdotes.html" class="active-link"
-                ><i class="fa fa-book" aria-hidden="true"></i
-                ><span> Questions & Anecdotes</span></a
-              >
-            </li>
-            <li class="link">
-              <a href="#" 
-                ><i class="fa fa-arrow-down" aria-hidden="true"></i
-                ><span>Resources</span></a
-              >
-            </li>
-            <li class="link">
-              <a href="#" 
-                ><i class="fa fa-file-text" aria-hidden="true"></i>
-                <span>About</span></a
-              >
-            </li>
-            <li class="link">
-              <a href="#" 
-                ><i class="fa fa-send" aria-hidden="true"></i>
-                <span>Say Hello</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+      </nav>
     </header>
-
-   
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <p class="lead welcome-text text-center">
-          A collection of Questions and Anecdotes on<span>Life</span>and
-          it's<span>Purpose.</span>
-        </p>
+    <section>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <p class="lead welcome-text text-center">
+            A collection of Questions and Anecdotes on<span>Life</span>and
+            it's<span>Purpose.</span>
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="article-block">
+              <div
+                class="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h3 class="panel-title">
+                      <a
+                        class="collapsed"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse1st"
+                        aria-expanded="false"
+                        aria-controls="collapse1st"
+                        >Anatomy of a Question</a
+                      >
+                    </h3>
+                  </div>
+                  <div
+                    id="collapse1st"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="panel-body">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry’s standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h3 class="panel-title">
+                      <a
+                        class="collapsed"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse2nd"
+                        aria-expanded="false"
+                        aria-controls="collapse2nd"
+                        >Genesis</a
+                      >
+                    </h3>
+                  </div>
+                  <div
+                    id="collapse2nd"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="panel-body">
+                      <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less normal distribution of
+                        letters, as opposed to using ‘Content here, content
+                        here’, making it look like readable English. Many
+                        desktop publishing packages and web page editors now use
+                        Lorem Ipsum as their default model text, and a search
+                        for ‘lorem ipsum’ will uncover many web sites still in
+                        their infancy. Various versions have evolved over the
+                        years, sometimes by accident, sometimes on purpose
+                        (injected humour and the like).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h3 class="panel-title">
+                      <a
+                        class="collapsed"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse3rd"
+                        aria-expanded="false"
+                        aria-controls="collapse3rd"
+                        >Identity</a
+                      >
+                    </h3>
+                  </div>
+                  <div
+                    id="collapse3rd"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingThree"
+                  >
+                    <div class="panel-body">
+                      <p>
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don’t look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure there
+                        isn’t anything embarrassing hidden in the middle of
+                        text. All the Lorem Ipsum generators on the Internet
+                        tend to repeat predefined chunks as necessary, making
+                        this the first true generator on the Internet. It uses a
+                        dictionary of over 200 Latin words, combined with a
+                        handful of model sentence structures, to generate Lorem
+                        Ipsum which looks reasonable. The generated Lorem Ipsum
+                        is therefore always free from repetition, injected
+                        humour, or non-characteristic words etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+     
+    </section>
   </body>
 </html>

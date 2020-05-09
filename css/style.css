@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
 
 body {
-  background-color: #c0d8d2;
+  background-color: #1f544d;
 }
 
-/*Header*/
+/*----------------------------------------------Header----------------------------------------*/
 
 .navbar {
-  background-color: #1f544d;
   border-radius: 0;
   margin: 0 auto;
   border: 0;
@@ -15,33 +14,47 @@ body {
 
 #nav {
   font-family: "Libre Franklin", sans-serif;
-  background-color: #1f544d;
-  border-bottom: 10px solid #ffdb26;
+  border-bottom: 5px solid #ffdb26;
+  background-color: #1b3a32;
 }
 
 .navbar-header,
 .navbar-nav {
-  padding: 50px 8% 50px 8%;
+  padding: 50px 10% 50px 10%;
 }
 
 .navbar-header .navbar-toggle {
-  border: 0;
+  border: 3px solid #ffdb26;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #1b3a32;
+}
+.navbar-header .navbar-toggle:hover {
+  background-color: #1b3a32;
+}
+
+.navbar-header .navbar-toggle:active {
+  background-color: #1b3a32;
+}
+
+.navbar-header .navbar-toggle:focus {
+  background-color: #1b3a32;
 }
 
 .navbar-header .navbar-toggle i {
-  font-size: 2em;
   color: #ffdb26;
 }
 
 #nav .link {
-    text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 1em;
   color: #c0d8d2;
 }
 
 #nav .link span {
-  padding-left: 5px;
+  padding-left: 7px;
 }
 
 #nav .link .active-link {
@@ -53,15 +66,70 @@ body {
   color: #fff;
 }
 
-#nav a:hover {
+#nav-collapsible .dropdown-menu {
+  background-color: #1b3a32;
+  padding: 7% 0%;
+  font-size: 1em;
+  text-transform: none;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  right: 0;
+  opacity: 98%;
+  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
+    -30px 30px 10px rgba(0, 0, 0, 0.035),
+    -55px -30px 90px rgba(0, 0, 0, 0.336) inset;
+  border: 1px solid #1f544d;
+  border-radius: 3px;
+  overflow: auto;
+  height: auto;
+  max-height: 355px;
+}
+
+#nav-collapsible .dropdown-menu li {
+  border-bottom: 1px solid #1f544d;
+}
+
+#nav-collapsible .dropdown-menu li:last-child {
+  border-bottom: 0px;
+}
+
+#nav-collapsible .dropdown-menu li a {
+  transition: background-color 0.5s;
+}
+
+#nav-collapsible .dropdown-menu li a:hover {
+  background-color: #1f544d;
+}
+
+#nav-collapsible .active-link .fa {
+  color: #fff;
+}
+
+#nav-collapsible .active-link .fa-caret-right {
   color: #ffdb26;
 }
 
-#nav .active-link {
-    /* font-family: "Libre Baskerville", serif; */
+#nav a:hover {
   color: #ffdb26;
-  font-weight: 700;
-  text-decoration: none;
+  background-color: #1b3a32;
+}
+#nav-collapsible .dropdown .dropdown-toggle {
+  background-color: #1b3a32;
+}
+#nav-collapsible .dropdown .dropdown-toggle:active {
+  background-color: #1b3a32;
+}
+
+#nav-collapsible .dropdown .dropdown-toggle:link {
+  background-color: #1b3a32;
+}
+
+#nav-collapsible .dropdown .dropdown-toggle:focus {
+  background-color: #1b3a32;
+}
+
+#nav-collapsible .dropdown .dropdown-toggle:hover {
+  background-color: #1b3a32;
 }
 
 .logo {
@@ -71,18 +139,18 @@ body {
   background-size: auto;
   position: absolute;
   top: 30px;
-
   min-height: 100px;
   width: 200px;
   height: auto;
 }
 
-/*Jumbotron*/
+/*----------------------------------------------Jumbotron----------------------------------------*/
 
 .jumbotron {
-  color: #1f544d;
+  color: #c0d8d2;
   margin: 0;
   border-bottom: 2px solid #1f544d;
+  background-color: #1f544d;
 }
 
 .jumbotron .welcome-text {
@@ -101,7 +169,126 @@ body {
   text-decoration-color: #ffdb26;
 }
 
-/*Media Queries*/
+/*----------------------------------------------Articles----------------------------------------*/
+.article-block .panel-group {
+    padding: 10% 10% 50px 10%;
+    margin:0 auto;
+}
+
+.article-block .panel-group .panel{
+    border: 1px solid #1f544d;
+    
+}
+
+.article-block .panel-group .panel-heading {
+    background-color: #1b3a32;
+    
+}
+
+.article-block .panel-group .panel a{
+    color:#ffdb26;
+   font-family: "Libre Franklin", sans-serif;
+   font-weight: 700;
+   padding:0;
+   margin: 0 auto;
+   width: 100%;
+   font-size: 1.3em;
+}
+/*----------------------------------------------Custom Scrollbar----------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f544d;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8aa3a0;
+}
+
+/*----------------------------------------------Animations----------------------------------------*/
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes toggle-down {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes toggle-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+#nav-collapsible .dropdown:hover > .dropdown-menu {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
+}
+
+#nav-collapsible .dropdown:hover > .active-link > .fa-caret-right {
+  transform: rotate(0deg);
+  animation-name: toggle-down;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: step-end;
+}
+
+#nav-collapsible .dropdown-menu li a:hover > .fa-caret-down {
+  transform: rotate(0deg);
+  animation-name: toggle-up;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: step-end;
+}
+
+/*----------------------------------------------Media Queries----------------------------------------*/
+@media (min-width: 768px) {
+  #nav-collapsible .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
 
 @media (max-width: 1100px) {
   .navbar-header {
@@ -131,7 +318,6 @@ body {
   }
   .navbar-nav > li {
     float: none;
-    /* margin-top: -10px; */
   }
   .navbar-nav > li > a {
     padding-top: 10px;
@@ -144,22 +330,38 @@ body {
     min-height: 50px;
     top: 27px;
   }
- 
-
 
   .navbar-collapse {
     text-align: center;
     font-size: 1em;
   }
-   .navbar-collapse .active-link {
+  .navbar-collapse .active-link {
     font-size: 1.3em;
   }
 
-  
-
   .navbar-header,
   .navbar-nav {
-    padding: 20px 2% 20px 3%;
+    padding: 20px 2% 20px 2%;
+  }
+
+  #nav-collapsible .dropdown-menu {
+    right: 25%;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 
+@media (max-width: 576px) {
+  .logo {
+    background: url("../images/Isotype.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    top: 5px;
+    left: 6%;
+    min-height: 100px;
+    width: 50px;
+    height: auto;
+  }
+}
