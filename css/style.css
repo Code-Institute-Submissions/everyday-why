@@ -4,6 +4,22 @@ body {
   background-color: #1b3a32;
 }
 
+hr {
+    border-color: #1f544d;
+    padding: 0;
+   
+
+}
+
+kbd{
+    font-family: "Libre Franklin", sans-serif;
+    background-color: #1b3a32;
+}
+
+footer {
+    background-color: #1b3a32;
+    min-height: 400px
+}
 /*----------------------------------------------Header----------------------------------------*/
 
 .navbar {
@@ -23,7 +39,7 @@ body {
 
 .navbar-header,
 .navbar-nav {
-  padding: 50px 10% 50px 10%;
+  padding: 2% 0 2% 1%;
 }
 
 .navbar-header .navbar-toggle {
@@ -53,7 +69,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1em;
-  color: #c0d8d2;
+
 }
 
 #nav .link span {
@@ -144,9 +160,8 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   position: absolute;
-  top: 30px;
-  padding-left: 10%;
-  min-height: 100px;
+  top: 0;
+  min-height: 100%;
   width: 200px;
   height: auto;
 }
@@ -161,20 +176,21 @@ body {
     -30px 30px 10px rgba(0, 0, 0, 0.035);
   background-image: radial-gradient(circle, #1f544d, #1b3a32);
   border: 0;
-  padding: 100px 10% 100px 10%;
+  padding: 5% 5%;
 }
 
 .jumbotron .welcome-text {
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 100;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .jumbotron .welcome-text small {
   font-family: "Libre Baskerville", serif;
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: 100;
   display: inline-block;
   color: #ffdb26;
@@ -194,91 +210,108 @@ body {
 
 /*----------------------------------------------Articles----------------------------------------*/
 .article-collection-bg {
-  background-color: #cbe4de;
-  /* box-shadow: -55px -30px 190px rgba(0, 0, 0, 0.055) inset,
-    -20px -10px 990px rgba(0, 0, 0, 0.747) inset; */
-    
-     padding: 5% 10% 5% 10%;
+    background-image: linear-gradient(to right, #cbe4de, #1f544d);
+  padding: 1em 0;
 }
 
 .article-block .panel-group {
-  width:100%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .article-block .panel-group .panel {
   border: 0;
   border-radius: 3px;
+  padding: 0 20px;
+  background-image: linear-gradient(to left, #cbe4de, #457165); 
 }
 
 .article-block .panel-group .panel-heading {
+  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.295),
+    -30px 30px 30px rgba(0, 0, 0, 0.151),
+    -55px -30px 115px rgba(0, 0, 0, 0.65) inset;
   background-color: #1f544d;
-  padding: 2% 3%;
+  padding: 1em 1em;
+}
+.article-block .panel-group .panel-heading:hover {
+  box-shadow: none;
+
+}
+.article-block .panel-group .panel-heading:focus {
+  box-shadow: none;
+}
+.article-block .panel-group .panel-heading:active {
+  box-shadow: none;
 }
 
 .article-block .panel-group .panel a {
   line-height: 1em;
-  color: #cbe4de;
+  color: #fff;
   font-family: "Libre Franklin", sans-serif;
-  font-weight: 100;
-  font-size: 3em;
-  padding-right: 20%;
+  font-weight: 700;
+  font-size: 1.3em;
+  width:100%;
+  padding-right: 0;
+  letter-spacing: 0px;
 }
-
-
 
 .article-block .panel-group .panel #article-one {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .article-block .panel-group .panel .panel-body {
-  background-color: #1b3a32;
-  color: #cbe4de;
+   background-color:transparent;
+  color: #1b3a32;
   font-family: "Libre Baskerville", serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.8em;
-  padding: 5% 5%;
+  padding: 4% 2%;
   margin: 0 auto;
   font-size: 1.2em;
-  text-align: justify;
+  text-align: left;
   max-height: 500px;
   overflow: auto;
+  border: 0;
+  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
+    -30px 30px 30px rgba(0, 0, 0, 0.035),
+    -75px -50px 90px rgba(255, 255, 255, 0.623) inset;
 }
-.artwork {
+.question-image {
   background: url("../images/The Anatomy of a Question.png");
-  background-position: center;
+  background-position:center ;
   background-repeat: no-repeat;
   background-size: auto;
-  min-height: 600px;
-  border-top: 1px solid #c0d8d2;
+  min-height: 500px;
+background-color:transparent;
+   
   
 }
 
 .article-block .panel-group .panel a:before {
   float: right !important;
   font-family: FontAwesome;
-  content: "\f068";
+  content: "\f0d7";
   padding-right: 5px;
-  font-size: 0.5em;
-}
-.article-block .panel-group .panel a.collapsed:before {
-    float: right !important;
-    content: "\f067";
+  font-size: 1em;
 }
 
 .article-block .panel-group .panel a:hover {
   text-decoration: none;
   color: #ffdb26;
+  
 }
 .article-block .panel-group .panel a:active {
   text-decoration: none;
   color: #ffdb26;
+  
 }
 .article-block .panel-group .panel a:focus {
   text-decoration: none;
-  color: #ffdb26;
+  
 }
+
 /*----------------------------------------------Custom Scrollbar----------------------------------------*/
 
 /* width */
@@ -294,16 +327,47 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #1f544d;
+  
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #8aa3a0;
+  background: #fff;
+  border: 1px solid #1b3a32
 }
+
+/*----------------------------------------------Accent colours----------------------------------------*/
+
+.happy {
+     background-image: linear-gradient(to bottom left, #cbe4de, #ffdb26) !important;
+}
+.inspiring {
+     background-image: linear-gradient(to bottom left, #cbe4de, #BCFF63) !important; 
+}
+
+.meditative{
+    
+     background-image: linear-gradient(to bottom left, #cbe4de, #0181E8) !important; 
+}
+
+.plain{
+     background-image: linear-gradient(to bottom left, #cbe4de, #fff)!important; 
+}
+
+
 
 /*----------------------------------------------Animations for dropdown menu----------------------------------------*/
 /* fade-in animation keyframes */
+@keyframes colour-fade-in {
+  from {
+     background-image: linear-gradient(to bottom right, #cbe4de, #1f544d);
+  }
+  to {
+     background-image: linear-gradient(to bottom right, #cbe4de, #ffdb26);
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -542,6 +606,24 @@ body {
   -ms-animation: toggle-up step-end 0.4s forwards;
 }
 
+.article-block .panel-group .panel a.collapsed:before {
+  transform: rotate(0deg);
+  animation: toggle-up step-end 0.4s forwards;
+  -webkit-animation: toggle-up step-end 0.4s forwards;
+  -moz-animation: toggle-up step-end 0.4s forwards;
+  -o-animation: toggle-up step-end 0.4s forwards;
+  -ms-animation: toggle-up step-end 0.4s forwards;
+}
+.article-block .panel-group .panel a.hover:before {
+  transform: rotate(0deg);
+  animation: toggle-up step-end 0.4s forwards;
+  -webkit-animation: toggle-up step-end 0.4s forwards;
+  -moz-animation: toggle-up step-end 0.4s forwards;
+  -o-animation: toggle-up step-end 0.4s forwards;
+  -ms-animation: toggle-up step-end 0.4s forwards;
+}
+
+
 /*----------------------------------------------Media Queries----------------------------------------*/
 @media (min-width: 768px) {
   #nav-collapsible .dropdown:hover > .dropdown-menu {
@@ -600,23 +682,31 @@ body {
 
   .navbar-header,
   .navbar-nav {
-    padding: 20px 2% 20px 2%;
+    padding: 20px 0%;
   }
 
   #nav-collapsible .dropdown-menu {
-    right: 25%;
+    right: 30%;
     padding-top: 2px;
     padding-bottom: 2px;
   }
 
-  .article-block .panel-group .panel a { 
-  font-size: 1.5em;
-  padding-right: 30%;
+  .jumbotron .welcome-text {
+  font-size: 1.3em;
   
 }
 
 
+  .article-block .panel-group .panel a {
+    font-size: 1.5em;
+   
+  }
 
+  .article-block .panel-group .panel-heading {
+  box-shadow: 
+    -25px -10px 65px rgba(0, 0, 0, 0.938) inset;
+  
+}
 }
 
 @media (max-width: 576px) {
