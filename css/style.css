@@ -1,18 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
 
 body {
-   background-image: linear-gradient(
-    to bottom left,
-    #cbe4de,
-    #bcff63
-  ) ;
-}
-}
-
-hr {
-  padding: 0;
-  margin:0;
-  border: 1px solid  #1f544d;
+  background-image: linear-gradient(to bottom left, #cbe4de, #bcff63);
 }
 
 kbd {
@@ -23,6 +12,10 @@ mark {
   font-family: "Libre Franklin", sans-serif;
   background-color: #ffdb26;
 }
+/* hr {
+    /* border: 3px solid #1b3a32; */
+    border: 3px solid #fff;
+} */
 
 /*----------------------------------------------Header----------------------------------------*/
 
@@ -75,10 +68,7 @@ mark {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1em;
-
-
 }
-
 
 #nav .link a {
   background-color: transparent;
@@ -126,7 +116,6 @@ mark {
 
 #nav-collapsible .active-link .fa {
   color: #fff;
- 
 }
 
 #nav-collapsible .active-link .fa-caret-down {
@@ -237,23 +226,22 @@ mark {
 
 .jumbotron kbd {
   color: #fff;
-  font-size: 0.7em; 
+  font-size: 0.7em;
 }
 
 .jumbotron mark {
   font-family: "Libre Baskerville", serif;
-
 }
 
 .jumbotron .welcome-text {
-    color: #1b3a32;
+  color: #1b3a32;
   font-family: "Libre Franklin", sans-serif;
   font-size: 2em;
   font-weight: 500;
   margin: 0;
   text-align: left;
   padding: 5% 0;
-  line-height: 1.05em;
+  line-height: 1.4em;
 }
 
 .jumbotron .welcome-text small {
@@ -278,18 +266,15 @@ mark {
 
 #quote {
   padding: 3% 3%;
-
-
 }
 #about {
   padding: 3% 3%;
-   
 }
 /*----------------------------------------------Articles----------------------------------------*/
 
-.article-collection-bg{
-    padding:3% 3%;
-    background-color:  #fff;
+.article-collection-bg {
+  padding: 3% 3%;
+  background-color: #fff;
 }
 .article-block .panel-group {
   width: 100%;
@@ -342,15 +327,14 @@ mark {
   letter-spacing: 0px;
 }
 
-
 .article-block .panel-group .panel .panel-body {
-    
   background-color: transparent;
   color: #1b3a32;
   font-weight: 500;
   padding: 4% 5%;
   margin: 0 auto;
   font-size: 1.4em;
+  line-height: 1.6em;
   text-align: left;
   max-height: 500px;
   overflow: auto;
@@ -409,67 +393,200 @@ mark {
 /*----------------------------------------------Footer----------------------------------------*/
 
 footer {
-   color: #1b3a32;
-  padding: 0 3%;
-   font-family: "Libre Franklin", sans-serif;
+  color: #1b3a32;
+  padding: 3% 3%;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 2em;
   background-color: transparent;
-  min-height: 200px;
   border-radius: 0;
-  margin: 0 auto;
   border: 0;
-
 }
-
 
 footer .tagline {
-color: #1b3a32;
-font-weight: 700;
-line-height: 1em;;
-font-size: 1em;
- font-family: "Libre Franklin", sans-serif;
-padding:0;
-margin :0  auto;
+  font-weight: 700;
+  line-height: 1em;
+  font-size: 0.7em;
+  margin: 0 auto;
 }
 
-
-footer .contact{
-    padding-top: 0;
+footer span {
+  display: block;
+  font-size: 0.7em;
+  line-height: 0.9em;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
-footer  .headline{
-    font-weight: 700;
-    margin: 0 auto;
-   padding-top: 0;
-    font-size: 1.5em;
+footer .hello {
+  color: #1b3a32;
 }
 
-footer .contact .email{
-    font-size:  0.7em;
-    margin: 0 auto;
-     font-family: "Libre Baskerville", serif;
-     font-style: italic;
-     font-weight: 300;
-     text-decoration: underline;
-    
-    
-}
-footer .hello{
-    display:block;
-    font-weight: 700;
-    font-size:  0.7em;
-    margin: 0 auto;
-    padding: 50px 0;
-     text-decoration: underline;
-
+footer .hello:hover {
+  color: #457165;
 }
 
-/* footer span{
-     font-family: "Libre Baskerville", serif;
-     font-style: italic;
-     font-weight: 100;
-     font-size: 0.9em;
-} */
+footer .fa {
+  font-size: 1.1em;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #1b3a32;
+  padding-bottom: 0;
+}
+
+footer .fa:hover {
+  color: #457165;
+}
+
+footer .newsletter form input {
+  background-color: transparent;
+  border: none;
+  font-size: 0.6em;
+  text-decoration-style: underline;
+}
+footer .newsletter form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-size: 0.6em;
+  text-decoration-style: underline;
+  outline: none;
+  width: 65%;
+}
+
+footer .newsletter form #email {
+  border-bottom: 2px solid #1b3a32;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
+footer .newsletter form #join {
+  border-radius: 3px;
+  background-color: #1b3a32;
+  color: #bcff63;
+  font-weight: 700;
+}
+footer .newsletter form #join:hover {
+  background-color: #457165;
+}
+
+#copyright h6 {
+  font-weight: bold;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /*https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete*/
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*----------------------------------------------Say-Hello----------------------------------------*/
+
+.say-hello {
+ margin:0 auto;
+
+  padding: 0% 3%;
+  
+}
+
+.say-hello .hello-header {
+  line-height: 1em;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  font-size: 3.6em;
+  width: 100%;
+  padding-right: 0;
+  letter-spacing: 0px;
+}
+
+.say-hello .input-heading {
+  font-size: 1.6em;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+}
+
+.say-hello form input {
+  background-color: transparent;
+  border: none;
+  font-size: 0.6em;
+  text-decoration-style: underline;
+  margin-top: 10px;
+}
+
+.say-hello form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  text-decoration-style: underline;
+  outline: none;
+  width: 60%;
+}
+.say-hello form input[type="submit"] {
+  display: block;
+  font-size: 1.3em;
+  border-radius: 3px;
+  background-color: #1b3a32;
+  color: #bcff63;
+  font-weight: 700;
+  
+}
+.say-hello form input[type="submit"]:hover {
+  background-color: #457165;
+}
+
+.say-hello form #fname,
+#lname,
+#email,
+#confirm-email,
+#message {
+  padding-top: 40px;
+  border-bottom: 2px solid #1b3a32;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
+
+.say-hello form #join:hover {
+  background-color: #457165;
+}
+
+.say-hello span {
+  display: block;
+  font-size: 1.7em;
+  line-height: 0.9em;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.say-hello .hello {
+  color: #1b3a32;
+}
+.say-hello .hello:hover {
+  color: #457165;
+}
+
+.say-hello .fa {
+  font-size: 3em;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #1b3a32;
+  padding-bottom: 0;
+}
+
+.say-hello .fa:hover {
+  color: #457165;
+}
+
+.say-hello .join-follow {
+  padding-top: 3.6em;
+}
+.say-hello .icons {
+  padding-top: 3.6em;
+  padding-bottom: 3.6em;
+}
+
+.dark .tagline, .dark #copyright{
+      color:  #bcff63;
+}
+
 
 /*----------------------------------------------Custom Scrollbar----------------------------------------*/
 
@@ -493,7 +610,7 @@ footer .hello{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.521);
-  border: 1px solid #1b3a32;
+  border: 1px solid 
 }
 
 /*----------------------------------------------Accent colours----------------------------------------*/
@@ -513,11 +630,11 @@ footer .hello{
   ) !important;
 }
 
-.meditative {
+.dark {
   background-image: linear-gradient(
     to bottom left,
-    #cbe4de,
-    #0181e8
+  #457165,
+    #1b3a32
   ) !important;
 }
 
@@ -532,6 +649,193 @@ footer .hello{
     #dea8ed
   ) !important;
 }
+
+
+/*----------------------------------------------Media Queries----------------------------------------*/
+@media (min-width: 768px) {
+  #nav-collapsible .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+    .say-hello form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  text-decoration-style: underline;
+  outline: none;
+  width: 80%;
+}
+
+ footer .newsletter form input[type="text"] {
+    background-color: transparent;
+    border: none;
+    font-size: 0.5em;
+    text-decoration-style: underline;
+    outline: none;
+    width: auto;
+  }
+
+  .row > .icons {
+    padding-bottom: 30px;
+  }
+  footer .newsletter {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  #nav .link {
+    font-size: 1.15em;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .collapse.in {
+    display: block !important;
+  }
+
+  .logo {
+    min-height: 50px;
+    top: 27px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    font-size: 1em;
+  }
+  .navbar-collapse .active-link {
+    font-size: 1.3em;
+  }
+
+  .navbar-header,
+  .navbar-nav {
+    padding: 20px 0%;
+  }
+
+  #nav-collapsible .dropdown-menu {
+    right: 30%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .jumbotron .welcome-text {
+    font-size: 1.7em;
+    line-height: 1.2em;
+  }
+
+  .article-block .panel-group .panel a {
+    font-size: 2.6em;
+  }
+  .article-block .panel-group .panel .panel-body {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+
+  .article-block .panel-group .panel .panel-heading a:before {
+    font-size: 0.7em;
+  }
+
+  footer .icons {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #nav .link {
+    font-size: 1em;
+  }
+
+  #nav .link .fa:not(.fa-caret-down) {
+    display: none;
+  }
+
+  #nav-collapsible .active-link .fa-caret-down {
+    display: none;
+  }
+
+  #nav-collapsible .active-link:not(.hello-link,.resources-link):after {
+    font-family: FontAwesome;
+    content: "\f0d7";
+    padding-right: 5px;
+    font-size: 1em;
+  }
+  #nav-collapsible .active-link:not(.hello-link,.resources-link)[aria-expanded="true"]:after {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    padding-right: 5px;
+    font-size: 1em;
+  }
+
+
+  #nav-collapsible .active-link[aria-expanded="false"]:after {
+    font-family: FontAwesome;
+    content: "\f0d7";
+  }
+
+  .jumbotron .welcome-text {
+    font-size: 1.3em;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .article-block .panel-group .panel a {
+    font-size: 1.3em;
+  }
+
+  .article-block .panel-group .panel .panel-heading a:before {
+    font-size: 0.7em;
+  }
+  .article-block .panel-group .panel .panel-body {
+    font-size: 1.2em;
+  }
+
+  footer .plain {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+footer:not(.plain)  {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  footer .tagline {
+    line-height: 1em;
+    font-size: 0.6em;
+  }
+}
+
+
+
+
 
 /*----------------------------------------------Animations for dropdown menu----------------------------------------*/
 /* fade-in animation keyframes */
@@ -789,142 +1093,4 @@ footer .hello{
   -moz-animation: fade-in ease-in 1.3s forwards;
   -o-animation: fade-in ease-in 1.3s forwards;
   -ms-animation: fade-in ease-in 1.3s forwards;
-}
-
-/*----------------------------------------------Media Queries----------------------------------------*/
-@media (min-width: 768px) {
-  #nav-collapsible .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-}
-
-@media (max-width: 1100px) {
-  .navbar-header {
-    float: none;
-  }
- 
-  .navbar-right {
-    float: none !important;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-
-#nav .link {
-  font-size: 1.15em;
-
-}
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-  .navbar-nav {
-    float: none !important;
-    margin-top: 7.5px;
-  }
-  .navbar-nav > li {
-    float: none;
-  }
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .collapse.in {
-    display: block !important;
-  }
-
-  .logo {
-    min-height: 50px;
-    top: 27px;
-  }
-
-  .navbar-collapse {
-    text-align: center;
-    font-size: 1em;
-  }
-  .navbar-collapse .active-link {
-    font-size: 1.3em;
-  }
-
-  .navbar-header,
-  .navbar-nav {
-    padding: 20px 0%;
-  }
-
-  #nav-collapsible .dropdown-menu {
-    right: 30%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-
-  .jumbotron .welcome-text {
-    font-size: 1.7em;
-    line-height: 1.2em;
-  
-
-  }
-
-  .article-block .panel-group .panel a {
-    font-size: 2.6em;
-  }
-.article-block .panel-group .panel .panel-body{
-    font-size: 2em;
-}
-
-.article-block .panel-group .panel .panel-heading a:before{
-    font-size: 0.7em;
-}
- 
-}
-
-
-@media (max-width: 767px) {
-
-    #nav .link .fa:not(.fa-caret-down) {
-   display: none;
-}
-   
-  
- #nav-collapsible .active-link .fa-caret-down {
-  display: none;
-}
-
- #nav-collapsible .active-link:after {
-  font-family: FontAwesome;
-  content: "\f0d7";
-  padding-right: 5px;
-  font-size: 1em;
-}
- #nav-collapsible .active-link[aria-expanded="true"]:after {
-  font-family: FontAwesome;
-  content: "\f0d8";
-  padding-right: 5px;
-  font-size: 1em;
-}
-
- #nav-collapsible .active-link[aria-expanded="false"]:after{
-font-family: FontAwesome;
-  content: "\f0d7";
-}
-
- .jumbotron .welcome-text {
-    font-size: 1.3em;
-      padding-top:10%;
-      padding-bottom:10%;
-  }
-
-  .article-block .panel-group .panel a {
-    font-size: 1.7em;
-  }
-
-.article-block .panel-group .panel .panel-heading a:before{
-    font-size: 0.7em;
-}
-  .article-block .panel-group .panel .panel-body{
-    font-size: 1.3em;
-}
 }
