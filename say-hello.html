@@ -34,7 +34,8 @@
     <title>Everyday Why</title>
   </head>
 
-  <body>
+  <body >
+  <div id="watermark"></div>
     <header>
       <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
@@ -72,7 +73,7 @@
               <li class="link ">
                 <a href="say-hello.html" class="active-link active hello-link">
                   <i class="fa fa-send" aria-hidden="true"></i>
-                  <span>Say hello</span></a
+                  <span>Say hello!</span></a
                 >
               </li>
             </ul>
@@ -84,8 +85,7 @@
         >
       </nav>
     </header>
-
-    <section> 
+     <!-- <section> 
       <div class="jumbotron jumbotron-fluid" id="about">
         <div class="container">
           <p class="welcome-text text-center">
@@ -106,18 +106,18 @@
             Isn’t it just <span class="text-muted">common sense</span>— as
             common as the sense of taste— To put our heads together and figure
             out what’s going on here?..."
-            <kbd> <mark>— Job 34:4</mark></kbd>
+            <kbd>— Job 34:4</kbd>
           </p>
         </div>
       </div>
-    </section>
-
-    <section class="say-hello">
+    </section> -->
+    
+    <section class="say-hello happy">
       <div class="container-fluid">
-        <div class="row">
-        <div class="col-xs-12  ">
-          <div class="hello-header">Hello!</div>
-          <span class="input-heading">Do you have a question or comment?</span>
+        <div class="row"> 
+        <div class="col-xs-12 col-lg-5">
+          <div class="hello-header">Hello! <i class="fa fa-hand-o-down" aria-hidden="true"></i></div>
+          <span class="input-heading ">Got a question or comment?</span>
           <div>
             <form action="" method="get">
               <label for="fname" class="sr-only">First Name</label>
@@ -154,13 +154,14 @@
               <input type="submit" value="Send" />
             </form>
           </div>
-       
-          </div>
-          <div class="col-xs-12  join-follow" >
+    
+        </div>
+        <div class="col-xs-12 col-lg-5 col-lg-offset-2" >
+         <div class="join-follow" id="say-hello-right" >
           <div class="newsletter">
             <form action="" method="get" class="form-inline">
-              <span class="input-heading">Join our Newsletter</span>
-              <label for="email" class="sr-only">Join our Newsletter</label>
+              <span class="input-heading ">Join our Newsletter</span>
+              <label for="email" class="sr-only">Join our Newsletter</label><br/>
               <input
                 type="text"
                 id="email"
@@ -172,7 +173,7 @@
         
           </div>
            <div class="icons">
-            <span class="input-heading">Follow Us</span>
+            <span class="input-heading ">Follow Us</span><br>
             <a href="https://www.instagram.com/abbaabbarex/" target="_blank"
               ><i class="fa fa-instagram" aria-hidden="true"></i
             ></a>
@@ -182,22 +183,22 @@
           </div>
         </div>
         </div>
+        </div>
       </div>
     </section>
    
-    <footer class="dark">
-      <div class="container-fluid">
+    <footer id="footer-watermark" >
+      <div class="container-fluid ">
         <div class="row">
-        
-
-          <div class="col-xs-12 col-lg-6">
+          <div class="col-xs-12 ">
             <h1 class="tagline">
-              A Gallery of Questions and Anecdotes on Life and its Purpose.
+              A Gallery of Questions and Anecdotes <br class="breakpoint-small"> on Life and its Purpose.
             </h1>
             <div id="copyright">
               <h6>©2020 EverydayWhy | All Rights Reserved.</h6>
             </div>
           </div>
+       
         </div>
       </div>
     </footer>

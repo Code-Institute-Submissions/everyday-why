@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
 
+
+
+/*----------------------------------------------Utilities----------------------------------------*/
 body {
-  background-image: linear-gradient(to bottom left, #cbe4de, #bcff63);
+    position: relative;
 }
 
 kbd {
@@ -12,10 +15,10 @@ mark {
   font-family: "Libre Franklin", sans-serif;
   background-color: #ffdb26;
 }
-/* hr {
-    /* border: 3px solid #1b3a32; */
-    border: 3px solid #fff;
-} */
+
+
+
+ 
 
 /*----------------------------------------------Header----------------------------------------*/
 
@@ -26,6 +29,7 @@ mark {
   box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
     -30px 30px 10px rgba(0, 0, 0, 0.035),
     -55px -30px 90px rgba(0, 0, 0, 0.336) inset;
+    padding: 0;
 }
 
 #nav {
@@ -222,6 +226,7 @@ mark {
   margin: 0 auto;
   border: 0;
   background-color: transparent;
+  z-index: 20000 !important;
 }
 
 .jumbotron kbd {
@@ -399,7 +404,8 @@ footer {
   font-size: 2em;
   background-color: transparent;
   border-radius: 0;
-  border: 0;
+  border-top: 2px solid #ffdb26;  
+ 
 }
 
 footer .tagline {
@@ -440,13 +446,13 @@ footer .fa:hover {
 footer .newsletter form input {
   background-color: transparent;
   border: none;
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-decoration-style: underline;
 }
 footer .newsletter form input[type="text"] {
   background-color: transparent;
   border: none;
-  font-size: 0.6em;
+  font-size: 0.5em;
   text-decoration-style: underline;
   outline: none;
   width: 65%;
@@ -454,20 +460,29 @@ footer .newsletter form input[type="text"] {
 
 footer .newsletter form #email {
   border-bottom: 2px solid #1b3a32;
+   padding-top: 10px;
+
   font-family: "Libre Baskerville", serif;
-  font-style: italic;
+ 
+ 
 }
+
 footer .newsletter form #join {
+    font-size: 0.4em;
   border-radius: 3px;
   background-color: #1b3a32;
   color: #bcff63;
   font-weight: 700;
+   padding: 7px 28px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
 }
 footer .newsletter form #join:hover {
   background-color: #457165;
 }
 
 #copyright h6 {
+    font-size: 0.4em;
   font-weight: bold;
 }
 
@@ -476,32 +491,63 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   /*https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete*/
-  transition: background-color 5000s ease-in-out 0s;
+  transition: color,background-color 5000s ease-in-out 0s;
+}
+
+body #footer-watermark {
+     z-index:10000 !important;
+     background-color: #fff;
 }
 
 /*----------------------------------------------Say-Hello----------------------------------------*/
 
 .say-hello {
  margin:0 auto;
-
-  padding: 0% 3%;
-  
+  padding: 3% 3%; 
+  /* border-top: 5px solid #fff; */
+  /* background-color:  #fff; */
+  color: #1b3a32;
 }
 
 .say-hello .hello-header {
   line-height: 1em;
   font-family: "Libre Franklin", sans-serif;
-  font-weight: 700;
-  font-size: 3.6em;
+  font-weight: 900;
+  font-size: 5em;
   width: 100%;
   padding-right: 0;
   letter-spacing: 0px;
+  padding-bottom: 1em;
+color: #1b3a32;
+
 }
 
+
 .say-hello .input-heading {
-  font-size: 1.6em;
+  font-size: 2em;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 700;
+     border-radius: 3px;
+     display: inline-block;
+     padding: 12px 12px;
+     background-color:#fff;
+
+ color: #1b3a32;
+  
+        box-shadow: -10px -10px 60px rgba(0, 0, 0, 0.082),
+    -10px -10px 50px rgba(0, 0, 0, 0.082);
+ 
+}
+
+.say-hello .input-heading-inner {
+ 
+     padding: 10px 1px;
+     background-color: #000;
+}
+
+.say-hello .hello-header .fa {
+    color: #1b3a32;
+    font-size: 0.8em;
 }
 
 .say-hello form input {
@@ -509,7 +555,8 @@ input:-webkit-autofill:active {
   border: none;
   font-size: 0.6em;
   text-decoration-style: underline;
-  margin-top: 10px;
+  margin-top: 20px;
+  
 }
 
 .say-hello form input[type="text"] {
@@ -519,72 +566,107 @@ input:-webkit-autofill:active {
   text-decoration-style: underline;
   outline: none;
   width: 60%;
+  
 }
 .say-hello form input[type="submit"] {
   display: block;
-  font-size: 1.3em;
+  font-size: 0.8em;
   border-radius: 3px;
   background-color: #1b3a32;
-  color: #bcff63;
+    color: #ffdb26;
   font-weight: 700;
+  padding: 7px 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Libre Franklin", sans-serif;
+    box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.195),
+    -10px -10px 30px rgba(0, 0, 0, 0.151);
   
 }
 .say-hello form input[type="submit"]:hover {
+  
+    color: #fff;
   background-color: #457165;
+    box-shadow: none;
 }
 
 .say-hello form #fname,
-#lname,
-#email,
-#confirm-email,
-#message {
-  padding-top: 40px;
-  border-bottom: 2px solid #1b3a32;
+.say-hello form #lname,
+.say-hello form #email,
+.say-hello form #confirm-email,
+.say-hello form #message {
+  padding-top: 30px;
+  border-bottom: 2px solid #457165;
   font-family: "Libre Baskerville", serif;
-  font-style: italic;
+  font-weight: 700;
+  
 }
+
 
 .say-hello form #join:hover {
   background-color: #457165;
 }
 
 .say-hello span {
-  display: block;
+  display: inline;
   font-size: 1.7em;
   line-height: 0.9em;
   font-weight: 700;
   margin: 0 auto;
 }
 
-.say-hello .hello {
-  color: #1b3a32;
-}
-.say-hello .hello:hover {
-  color: #457165;
-}
+
 
 .say-hello .fa {
   font-size: 3em;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-right: 10px;
   color: #1b3a32;
   padding-bottom: 0;
 }
 
 .say-hello .fa:hover {
-  color: #457165;
+  color: #fff;
 }
 
 .say-hello .join-follow {
-  padding-top: 3.6em;
+ 
+  padding-top: 11.26em;
+  margin:0 auto;
 }
+
 .say-hello .icons {
   padding-top: 3.6em;
   padding-bottom: 3.6em;
 }
 
 .dark .tagline, .dark #copyright{
-      color:  #bcff63;
+      color: #457165;
+      
+}
+
+#footer-dark {
+    color: #fff;
+    background-color: #1b3a32;
+     box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
+    -30px 30px 10px rgba(0, 0, 0, 0.035),
+    -55px -30px 90px rgba(0, 0, 0, 0.336) inset;
+}
+
+#watermark {
+  background: url("../images/Isotype-watermark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+right:2%;
+ bottom:0;
+  min-height: 100%;
+  width: 1934px;
+  height: auto;
+  /* opacity: 20%; */
+  z-index:0;
+  overflow: hidden;
 }
 
 
@@ -652,11 +734,19 @@ input:-webkit-autofill:active {
 
 
 /*----------------------------------------------Media Queries----------------------------------------*/
+
 @media (min-width: 768px) {
   #nav-collapsible .dropdown:hover > .dropdown-menu {
     display: block;
   }
 }
+
+
+@media (max-width: 1920px) {
+    .breakpoint-large{
+        display:none;
+    }
+
 
 @media (max-width: 1200px) {
     .say-hello form input[type="text"] {
@@ -674,7 +764,8 @@ input:-webkit-autofill:active {
     font-size: 0.5em;
     text-decoration-style: underline;
     outline: none;
-    width: auto;
+    width: 70%;
+    max-width: 500px;
   }
 
   .row > .icons {
@@ -682,7 +773,13 @@ input:-webkit-autofill:active {
   }
   footer .newsletter {
     padding-bottom: 40px;
+
   }
+
+  .say-hello .join-follow {
+  padding-top: 3.6em;
+  
+}
 }
 
 @media (max-width: 1100px) {
@@ -832,6 +929,11 @@ footer:not(.plain)  {
     font-size: 0.6em;
   }
 }
+
+@media (max-width: 960px) {
+    .breakpoint-large{
+        display:inline;
+    }
 
 
 
