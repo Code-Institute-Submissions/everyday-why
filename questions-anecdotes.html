@@ -54,7 +54,7 @@
               <li class="link dropdown">
                 <a
                   href="questions-anecdotes.html"
-                  class="active-link active dropdown-toggle"
+                  class="question-link active-link active dropdown-toggle"
                   data-toggle="dropdown"
                   ><i class="fa fa-book" aria-hidden="true"></i
                   ><span> Questions & Anecdotes </span
@@ -244,15 +244,15 @@
                 </ul>
               </li>
               <li class="link">
-                <a href="#"
+                <a href="freebies.html"
                   ><i class="fa fa-arrow-down" aria-hidden="true"></i
-                  ><span>Resources</span></a
+                  ><span>Freebies</span></a
                 >
               </li>
-              <li class="link">
-                <a href="#" onclick="visibiltySwitch()" id="about-link"
-                  ><i class="fa fa-file-text" aria-hidden="true"></i>
-                  <span>About</span></a
+               <li class="link">
+                <a href="#" onclick="visibiltySwitch()" id="chew-this-over-link"
+                  ><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  <span>Chew this Over</span></a
                 >
               </li>
               <li class="link">
@@ -271,7 +271,7 @@
       </nav>
     </header>
     <section>
-      <div class="jumbotron jumbotron-fluid" id="about">
+      <div class="jumbotron jumbotron-fluid educational" id="chew-this-over">
         <div class="container">
           <p class="welcome-text text-center">
             We believe that the <span>Gospel Of Jesus Christ </span> is the
@@ -1530,16 +1530,16 @@
         );
       });
 
-      //Switch between quote and about sections
+      //Switch between quote and chew-this-over sections
 
-      $("#about").hide();
-      $("#about-link").on("click", function () {
-        $("#quote, #about").slideToggle(600);
+      $("#chew-this-over").hide();
+      $("#chew-this-over-link").on("click", function () {
+        $("#quote, #chew-this-over").slideToggle(600);
       });
 
-      //Style "ABOUT" nav link after each click
-      var aboutLink = document.getElementById("about-link");
-      aboutLink.addEventListener("click", function () {
+      //Style "Chew This Over" nav link after each click
+      var chewThisOverLink = document.getElementById("chew-this-over-link");
+      chewThisOverLink.addEventListener("click", function () {
         var clicked = document.getElementsByClassName("clicked");
         if (this.className !== "clicked") {
           this.className += "clicked";
