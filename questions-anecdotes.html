@@ -297,7 +297,8 @@
       </div>
     </section>
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid questions">
+     
         <div class="row article-collection-bg">
           <div class="col-xs-12">
             <div class="article-block">
@@ -1575,6 +1576,24 @@
           }
         );
       });
+
+      // Opens accordion automatically if an accordion target is accessed from another page
+      // https://gist.github.com/raddevon/8958486
+      function openAnchorAccordion() {
+        if (window.location.hash) {
+          var jQuerytarget = jQuery(".questions").find(window.location.hash);
+          //console.log( jQuerytarget );
+          if (jQuerytarget.hasClass("panel-collapse")) {
+            var jQuerytargetAccordion = jQuerytarget.find(".panel-collapse");
+            console.log(jQuerytargetAccordion);
+            jQuerytarget.collapse("show");
+          }
+        }
+      }
+
+      openAnchorAccordion();
+
+      jQuery(".questions").on("click", "a", openAnchorAccordion);
     </script>
   </body>
 </html>
