@@ -16,7 +16,10 @@ mark {
   background-color: #ffdb26;
 }
 
-
+hr{
+    border: 3px solid #1b3a32;
+  margin-right: 70%;
+}
 
  
 
@@ -130,7 +133,7 @@ mark {
   color: #ffdb26;
 }
 
-#nav a:hover {
+#nav a:not(fa):hover {
   color: #ffdb26;
   background-color: transparent;
   transition: all ease 0.35s;
@@ -182,9 +185,13 @@ mark {
   height: auto;
 }
 
+#nav #about-link:hover{
+color: #dea8ed;
+}
+
 #nav .clicked {
-  color: #dea8ed;
-  transition: color 1s ease;
+  color: #dd98f0;
+  transition: color 0.5s ease;
 }
 
 #scroll-to-top {
@@ -231,71 +238,94 @@ mark {
   margin: 0 auto;
   border: 0;
   position: relative;  
-background-color: #fff;
+ background-color: transparent;
+padding: 3% 3% 0% 3%;
+
 }
 
-.jumbotron kbd {
-  color: #fff;
-  font-size: 0.7em;
-}
-
-.jumbotron mark {
-  font-family: "Libre Baskerville", serif;
-}
-
-.jumbotron .welcome-text {
-  color: #1b3a32;
+#welcome {
+  line-height: 0.98em;
   font-family: "Libre Franklin", sans-serif;
+  font-weight: 800;
   font-size: 2em;
-  font-weight: 500;
-  margin: 0;
-  text-align: left;
-  padding: 5% 0;
-  line-height: 1.4em;
+  letter-spacing: 0px;
+height: 30vh;
+margin: 0 auto;
+ display: inline-block;
+ position: relative;
+ top:0;
+ left:0;
+width: 500px;
+color: #1b3a32;
 }
 
-.jumbotron .welcome-text small {
-  font-family: "Libre Baskerville", serif;
-  font-size: 0.8em;
-  font-weight: 100;
-  display: inline-block;
-  color: #1b3a32;
-  margin: 0;
-  border: 0;
+#welcome  kbd {
+    color: #1b3a32;
+  font-size: 0.6em;
+  font-weight: 700;
+  background-color: #ffdb26; 
 }
 
-.jumbotron .welcome-text span {
-  color: #1f544d;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 1.1em;
-  text-decoration: underline;
-  text-decoration-color: #ffdb26;
+
+#about {
+  font-family: "Libre Franklin", sans-serif;
+  height: 60vh;
+  margin: 0 auto;
+  position: relative;
 }
 
-#quote {
-  padding: 3% 3%;
-   /* background: url("../images/quote-bg.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-position: relative;
-  max-height: 1000px;
-  width: 100%;
-  height: auto; */
+#about .about-header {
+     line-height: 110px;
+  font-weight: 800;
+  font-size: 140px;
+  letter-spacing: -3px;
+  margin: 0 auto;
+ color: #cbe4de;
+ padding-bottom: 25px;
+
+
 }
-#chew-this-over {
-  padding: 3% 3%;
+
+
+#about kbd{
+    color: #fff;
+    margin-top: 10px;
+  font-size: 17px;
+font-weight: 600;
 }
+
+#about-text {
+   line-height: 1.1em;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  font-size: 1.9em;
+  letter-spacing: 0px;
+padding-bottom: 20px;
+ display: inline-block;
+color: #dd98f0;
+width: 100%;
+
+
+}
+
+#about .fa{
+    color:#ffdb26;
+    font-size: 600px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    mix-blend-mode: darken;
+}
+
+
+
+
 
 
 /*----------------------------------------------Articles----------------------------------------*/
 
 .article-collection-bg {
   padding: 5% 3%;
-  background-color: #fff;
-  border-top: 1px solid #ffdb26;
 
 }
 
@@ -313,7 +343,7 @@ position: relative;
   border: 0;
   border-radius: 3px;
   padding: 0 20px;
-  background-image: linear-gradient(to left, #cbe4de, #457165);
+  
 }
 
 .article-block .panel-group .panel-heading {
@@ -360,7 +390,7 @@ position: relative;
   font-size: 1.4em;
   line-height: 1.6em;
   text-align: left;
-  max-height: 500px;
+  max-height: 80vh;
   overflow: auto;
   border: 0;
   box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
@@ -378,7 +408,7 @@ position: relative;
 }
 
 .article-block .panel-group .panel .panel-heading a:before {
-  float: right !important;
+  float: right ;
   font-family: FontAwesome;
   content: "\f0d8";
   padding-right: 5px;
@@ -390,7 +420,7 @@ position: relative;
   .panel
   .panel-heading[aria-expanded="false"]
   a:before {
-  float: right !important;
+  float: right;
   content: "\f0d7";
 }
 
@@ -432,6 +462,7 @@ footer .tagline {
   line-height: 1em;
   font-size: 0.7em;
   margin: 0 auto;
+  padding: 0;
 }
 
 footer span {
@@ -456,6 +487,7 @@ footer .fa {
   padding-right: 10px;
   color: #1b3a32;
   padding-bottom: 0;
+  margin: 0;
 }
 
 footer .fa:hover {
@@ -467,6 +499,7 @@ footer .newsletter form input {
   border: none;
   font-size: 0.8em;
   text-decoration-style: underline;
+  margin: 0;
 }
 footer .newsletter form input[type="text"] {
   background-color: transparent;
@@ -480,7 +513,7 @@ footer .newsletter form input[type="text"] {
 footer .newsletter form #email {
   border-bottom: 1px solid #1b3a32;
    padding-top: 10px;
-
+   margin: 0;
   font-family: "Libre Baskerville", serif;
  
  
@@ -495,6 +528,7 @@ footer .newsletter form #join {
    padding: 7px 28px;
    text-transform: uppercase;
    letter-spacing: 2px;
+  margin: 0; 
 
 }
 footer .newsletter form #join:hover {
@@ -503,9 +537,10 @@ footer .newsletter form #join:hover {
   
 }
 
-#copyright h6 {
+#copyright {
     font-size: 0.4em;
   font-weight: bold;
+  margin-bottom: 0; 
 }
 
 input:-webkit-autofill,
@@ -523,9 +558,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
- #footer-watermark {
-     background-color: #fff;
-}
 
 /*----------------------------------------------Say-Hello----------------------------------------*/
 
@@ -534,7 +566,6 @@ select:-webkit-autofill:focus {
  margin:0 auto;
   padding: 5% 3%;
   color: #1b3a32;
-  border-top: 1px solid #ffdb26;
 }
 
 .say-hello .hello-header {
@@ -542,14 +573,27 @@ select:-webkit-autofill:focus {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 800;
   font-size: 7em;
-  width: 100%;
   letter-spacing: 0px;
-padding-bottom: 5%;
-
+padding-bottom: 20px;
+ display: inline-block;
 color: #1b3a32;
-position: relative;
+
 
 }
+
+.say-hello .about-text {
+  line-height: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  letter-spacing: 0px;
+padding-bottom: 40px;
+color: #1b3a32;
+width: 80%;
+margin-left:0;
+
+}
+
 
 
 .say-hello .input-heading {
@@ -559,9 +603,9 @@ position: relative;
      border-radius: 3px;
      display: inline-block;
      padding: 12px 12px;
-     background-color:#fff;
+    background-color: rgba(255, 255, 255, 0.589);
     color: #1b3a32;
-    opacity:90%;
+
    
  
 }
@@ -668,21 +712,49 @@ text-decoration: none;
     -55px -30px 90px rgba(0, 0, 0, 0.336) inset;
 }
 
+
+
 #watermark {
   background: url("../images/Isotype-watermark.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   position: absolute;
-right:2%;
- bottom:0;
+left:0;
+ top:-5%;
   min-height: 100%;
-  width: 1934px;
-  height: auto;
-  opacity: 30%;
-  z-index:0;
-  overflow: hidden;
+  width:100%;
+  opacity: 100%;
+  mix-blend-mode: screen;
       
+}
+
+#bg-hello {
+  background: url("../images/landing-page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right:0%;
+  bottom:0%;
+  min-height: 100%;
+  width: 100%;
+  height:  auto;
+  opacity: 100%;
+  
+}
+
+#bg-question {
+  background: url("../images/Isotype-watermark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top:0%;
+  min-height: 100%;
+  width: 100%;
+  opacity: 100%;
+  mix-blend-mode: screen;     
 }
 
 /*----------------------------------------------Freebies Page----------------------------------------*/
@@ -690,25 +762,19 @@ right:2%;
 .freebies{
     padding: 5% 3%;
     margin: 0 auto;
-    background-color: #fff;
-    border-top: 1px solid #ffdb26;
+
 }
 
-.freebies .row{
-    margin: 0 auto;
-}
 
-.freebies .link-container {
-    border: 5px solid #fff;
-  
-}
+
 
 .test-image {
   background: url("../images/The Anatomy of a Question.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 500px;
+  height: 800px;
+  width:auto;
  
 }
 .test-image-half {
@@ -716,32 +782,34 @@ right:2%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 250px;
+  height: 400px;
+  width:auto;
   
 }
 
+
 .freebies .freebies-header{
-     line-height: 0.8em;
+ line-height: 0.8em;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 800;
-  font-size: 6em;
-  width: 100%;
+  font-size: 7em;
   letter-spacing: 0px;
+padding-bottom: 20px;
+ display: inline-block;
 color: #1b3a32;
-position: relative;
+width:60%;
 
 }
+
 .freebies .freebies-header-tagline{
-     line-height: 1em;
+   line-height: 1.3em;
   font-family: "Libre Franklin", sans-serif;
-  font-weight:700;
-  font-size: 1.7em;
-  width: 100%;
+  font-weight: 500;
+  font-size: 1.3em;
   letter-spacing: 0px;
-padding-top: 1em;
-padding-bottom: 5%;
+padding-bottom: 40px;
 color: #1b3a32;
-position: relative;
+width:50%;
 
 }
 
@@ -749,21 +817,28 @@ position: relative;
      line-height: 1em;
   font-family: "Libre Franklin", sans-serif;
   font-weight:700;
-  font-size: 0.9em;
-  width: 100%;
+ text-transform: uppercase;
   letter-spacing: 0px;
-padding-top: 1em;
-padding-bottom: 3em;
-color: #457165;
+color: #fff;
 
 
 }
 
 .freebies .freebies-header-tagline a:hover{
   
-color: #1b3a32;
+color: #ffdb26;
 text-decoration: none;
+background-color: #1f544d;
 
+
+}
+.freebies .freebies-header-tagline kbd{
+font-size: 0.7em;
+background-color: #1f544d;
+
+}
+.freebies .freebies-header-tagline kbd:hover{
+background-color: #1f544d;
 
 }
 
@@ -782,10 +857,10 @@ text-decoration: none;
 
 
 .freebies .link-container:hover > .list-group{ 
-   min-height:140px;
+   min-height:125px;
     max-height: 200px;
     opacity: 1;
-    transition: opacity cubic-bezier(1,0,.39,.86) 0.4s 0.2s, min-height cubic-bezier(.46,.09,.27,1) 0.4s 0.1s, max-height cubic-bezier(.46,.09,.27,1) 0.5s 0.1s;
+    transition: opacity cubic-bezier(1,0,.39,.86) 0.4s 0.2s, min-height cubic-bezier(.46,.09,.27,1) 0.6s 0.1s, max-height cubic-bezier(.46,.09,.27,1) 0.6s 0.1s;
     
 }
 
@@ -797,7 +872,6 @@ text-decoration: none;
  background-color: transparent;
 font-family: "Libre Franklin", sans-serif;
 font-weight: 700;
-font-size: 1.3em;
      
 }
 .freebies .list-group-item {
@@ -815,7 +889,6 @@ background-color: transparent;
      border: 0;
   border-radius: 3px;
   padding: 5px 10px;
-  /* margin: 2px 0; */
 color: #fff;
 font-family: "Libre Franklin", sans-serif;
 font-weight: 500;
@@ -824,6 +897,7 @@ background-color: #1f544d;
     -30px 10px 30px rgba(0, 0, 0, 0.151),
     -5px -10px 115px rgba(0, 0, 0, 0.65) inset;
 }
+
 .freebies .card-link:hover {
 color: #ffdb26;
 text-decoration: none;
@@ -876,14 +950,15 @@ padding-right: 5px;
     to bottom left,
     #cbe4de,
     #ffdb26
-  ) !important;
+  ) ;
+
 }
 .inspiring {
   background-image: linear-gradient(
     to bottom left,
     #cbe4de,
     #bcff63
-  ) !important;
+  ) ;
 }
 
 .dark {
@@ -891,20 +966,56 @@ padding-right: 5px;
     to bottom left,
   #457165,
     #1b3a32
-  ) !important;
+  ) ;
 }
 
 .plain {
-  background-image: linear-gradient(to bottom left, #cbe4de, #fff) !important;
+  background-image: linear-gradient(to bottom left, #cbe4de, #fff, #fff);
+}
+
+.white {
+  background-image: linear-gradient(to bottom left, #fff, #fff);
 }
 
 .educational {
   background-image: linear-gradient(
-    to bottom left,
-    #cbe4de,
-    #dea8ed
+    to bottom ,
+     #fff,
+     #dea8ed
   ) !important;
 }
+
+.enlightening  {
+  background-image: linear-gradient(
+    to top left,
+        
+#bcff63,
+    #fcd92d,
+         #dea8ed
+         
+   
+  ) ;
+}
+
+.home{
+  background-image: linear-gradient(
+    to bottom right,
+   #E0C6E7,
+   #fff,
+   #fff,
+   #fff    
+  ) !important;
+}
+.illuminating{
+  background-image: linear-gradient(
+    to bottom right,
+   #cbe4de,
+   #fff,
+   #fff,
+   #fff    
+  ) !important;
+}
+
 
 /*----------------------------------------------Animations for dropdown menu----------------------------------------*/
 /* fade-in animation keyframes */
@@ -1228,7 +1339,13 @@ padding-right: 5px;
 
 }
 
- 
+
+.say-hello .about-text {
+width: 100%;
+}
+
+
+
 }
 
 @media (max-width: 1100px) {
@@ -1305,7 +1422,28 @@ padding-right: 5px;
     transition: font-size ease-in-out 0.2s;
 }
 
-   
+  
+#about kbd{
+    margin-top: 10px;
+  font-size: 15px;
+}
+
+#about-text {
+   line-height: 1.1em;
+  font-size: 1.5em;
+  letter-spacing: 0px;
+padding-bottom: 20px;
+
+
+}
+
+#about .fa{
+    color:#ffdb26;
+    font-size: 600px;
+    top: 0;
+    left: 100px;
+ 
+} 
   
 
 
@@ -1324,11 +1462,6 @@ padding-right: 5px;
     margin-right: 10%;
     margin-left: 10%;
 
-  }
-
-  .jumbotron .welcome-text {
-    font-size: 1.7em;
-    line-height: 1.2em;
   }
 
   .article-block .panel-group .panel a {
@@ -1369,14 +1502,51 @@ padding-right: 5px;
     font-size: 1em;
   }
 
-  .jumbotron .welcome-text {
-    font-size: 1.3em;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
+ 
+  
+#welcome {
+  line-height: 0.98em;
+  font-size: 1.3em;
+  letter-spacing: 0px;
+height: 30vh;
+width: 100%;
+}
+
+#welcome  kbd {
+  font-size: 0.6em;
+  font-weight: 700;
+}
+
+
+#about {
+  height: 60vh;
+}
+
+
+#about kbd{
+    margin-top: 10px;
+  font-size: 12px;
+}
+
+#about-text {
+   line-height: 1.3em;
+  font-size: 0.8em;
+  letter-spacing: 0px;
+padding-bottom: 20px;
+
+
+}
+
+#about .fa{
+    color:#ffdb26;
+    font-size: 400px;
+    top: 0;
+    left: 100px;
+ 
+} 
 
   .article-block .panel-group .panel a {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .article-block .panel-group .panel .panel-heading a:before {
@@ -1399,44 +1569,30 @@ footer:not(.plain)  {
     line-height: 1em;
     font-size: 0.6em;
   }
-
+   .say-hello .hello-header {
+ line-height: 0.8em;
+  font-size: 3em;
+}
+  
+}
 
 .say-hello form input[type="text"] {
   font-size: 0.9em;
   width: 100%;
 }
 
-  #watermark {
-right:10px;
- bottom:270px;
-  min-height: 100%;
-  width: 1000px;
-  
-}
+ 
 
 .freebies .freebies-header{
-     line-height: 0.8em;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 800;
+ line-height: 0.8em;
   font-size: 4em;
-  width: 100%;
-  letter-spacing: 0px;
-color: #1b3a32;
-position: relative;
-
+  width:80%;
 }
-.freebies .freebies-header-tagline{
-     line-height: 1em;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight:700;
-  font-size: 1.2em;
-  width: 100%;
-  letter-spacing: 0px;
-padding-top: 1em;
-padding-bottom: 3em;
-color: #1b3a32;
-position: relative;
 
+.freebies .freebies-header-tagline{
+   line-height: 1.3em;
+  font-size: 1.3em;
+width:60%;
 }
 
 
@@ -1447,9 +1603,19 @@ position: relative;
     .breakpoint-large{
         display:none;
     }
+.freebies .freebies-header{
+ line-height: 0.8em;
+  font-size: 3em;
+  width:100%;
+}
 
+.freebies .freebies-header-tagline{
+   line-height: 1.3em;
+  font-size: 1.3em;
+width:100%;
+}
+ 
 
-
-
+}
 
 

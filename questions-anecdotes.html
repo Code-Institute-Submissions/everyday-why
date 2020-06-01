@@ -34,7 +34,8 @@
     <title>Everyday Why</title>
   </head>
 
-  <body class="happy">
+  <body class="home">
+  
     <header>
       <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
@@ -250,9 +251,9 @@
                 >
               </li>
                <li class="link">
-                <a href="#" onclick="visibiltySwitch()" id="chew-this-over-link"
+                <a href="#" onclick="visibiltySwitch()" id="about-link"
                   ><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                  <span>Chew this Over</span></a
+                  <span>About</span></a
                 >
               </li>
               <li class="link">
@@ -270,31 +271,41 @@
         >
       </nav>
     </header>
-    <section>
-      <div class="jumbotron jumbotron-fluid educational" id="chew-this-over">
-        <div class="container">
-          <p class="welcome-text text-center">
-            We believe that the <span>Gospel Of Jesus Christ </span> is the
-            answer to the World's Questions. It is our hope that we are able to
-            create a space which stimulates a fresh perspective and provides
-            Answers to commonly encountered Questions. It is our prayer that
-            with artful storytelling and practical content, you would find
-            solutions and unique direction to make that next step.
-            <kbd>Simplifying the Truth with words, pictures and sound</kbd>
-          </p>
+    <section class="jumbotron">
+      
+        <div class="container-fluid">
+        <div class="row" >
+            
+            <div class="col-xs-12 " id="about">   <div class="about-header"><i class="fa fa-circle" aria-hidden="true"></i></div>
+             
+    <p id="about-text">Hi, my name is Rex and I’m a creative. <br>
+I am also an autodidact philomath.<br>
+But most of all, I am a Christian. <br>
+I have a curious mind, I strive to understand, <br>
+and so I ask a lot of questions.<br>
+I ask, then research, then talk, then ask again, <br>
+then research and then discuss until i find answers. <br>
+I share a lot of my processes with my wife who is <br>
+a researcher and often helps my process. <br>
+Sometimes, I find new understanding in my son. <br>
+This is a personal diary into my questions about life. <br>
+I think of simple ways to interpret life’s concepts, <br>
+and here, I share my thoughts.<br>
+</p>
+ <div><kbd> A Gallery of Questions and Anecdotes on
+              Life and its Purpose</kbd> </div>
+    </div>
+          
         </div>
+        <div class="row">
+        <div class="col-xs-12" id="welcome"><div>Keep vigilant watch over your heart;
+    that’s where life starts. </div> <kbd>Pro. 4 | 23</kbd>
+             
+    
       </div>
-      <div class="jumbotron jumbotron-fluid" id="quote">
-        <div class="container">
-          <p class="welcome-text text-center">
-            “So, my fine friends—listen to me, and see what you think of this.
-            Isn’t it just <span class="text-muted">common sense</span>— as
-            common as the sense of taste— To put our heads together and figure
-            out what’s going on here?..."
-            <kbd>— Job 34:4</kbd>
-          </p>
-        </div>
       </div>
+      </div>
+      
     </section>
     <section>
       <div class="container-fluid questions">
@@ -308,7 +319,7 @@
                 role="tablist"
                 aria-multiselectable="true"
               >
-                <div class="panel panel-default panel-one educational">
+                <div class="panel panel-default panel-one happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1458,7 +1469,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="happy">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-lg-2 icons">
@@ -1488,18 +1499,18 @@
           </div>
 
           <div class="col-sm-12 col-lg-3">
-            <h1 class="tagline">
+            <div class="tagline">
               A Gallery of Questions and Anecdotes on
               <br class="breakpoint-large" />
               Life and its Purpose.
-            </h1>
+            </div>
             <div id="copyright">
-              <h6>©2020 EverydayWhy | All Rights Reserved.</h6>
+              ©2020 EverydayWhy | All Rights Reserved.
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
     <script>
       // Scroll to the top of the page - code project
       jQuery(document).ready(function ($) {
@@ -1519,6 +1530,7 @@
       // Smooth scroll to active article
 
       $("#accordion").on("shown.bs.collapse", function () {
+          
         var padding = 73;
         var panel = $(this).find(".in");
 
@@ -1531,16 +1543,16 @@
         );
       });
 
-      //Switch between quote and chew-this-over sections
+      //Switch between welcome and about sections
 
-      $("#chew-this-over").hide();
-      $("#chew-this-over-link").on("click", function () {
-        $("#quote, #chew-this-over").slideToggle(600);
+      $("#about").hide();
+      $("#about-link").on("click", function () {
+        $("#welcome, #about").slideToggle(600);
       });
 
-      //Style "Chew This Over" nav link after each click
-      var chewThisOverLink = document.getElementById("chew-this-over-link");
-      chewThisOverLink.addEventListener("click", function () {
+      //Style "About" nav link after each click
+      var aboutLink = document.getElementById("about-link");
+      aboutLink.addEventListener("click", function () {
         var clicked = document.getElementsByClassName("clicked");
         if (this.className !== "clicked") {
           this.className += "clicked";
@@ -1587,6 +1599,7 @@
             var jQuerytargetAccordion = jQuerytarget.find(".panel-collapse");
             console.log(jQuerytargetAccordion);
             jQuerytarget.collapse("show");
+            window.location.href = window.location.href.replace(/#.*$/, '#');
           }
         }
       }

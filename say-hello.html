@@ -34,8 +34,9 @@
     <title>Everyday Why</title>
   </head>
 
-  <body class="happy">
-  <div id="watermark"></div>
+  <body class="enlightening">
+  
+
     <header>
       <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
@@ -65,9 +66,9 @@
                 >
               </li>
                <li class="link">
-                <a href="#" onclick="visibiltySwitch()" id="chew-this-over-link"
+                <a href="#" onclick="visibiltySwitch()" id="about-link"
                   ><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                  <span>Chew this Over</span></a
+                  <span>About</span></a
                 >
               </li>
               <li class="link ">
@@ -85,40 +86,31 @@
         >
       </nav>
     </header>
-     <section> 
-      <div class="jumbotron jumbotron-fluid educational" id="chew-this-over">
-        <div class="container">
-          <p class="welcome-text text-center">
-            We believe that the <span>Gospel Of Jesus Christ </span> is the
-            answer to the World's Questions. It is our hope that we are able to
+      
+    <section class="say-hello ">
+     
+      <div class="container-fluid">
+      <div class="row">
+         <div class="col-xs-12 col-lg-12 hello-header">Hello!
+         </div>
+         <div class="col-xs-12 col-lg-6">
+         <p class="about-text">
+           We believe that the <kbd>Gospel Of Jesus Christ</kbd> is the
+            answer to the world's questions. It is our hope that we are able to
             create a space which stimulates a fresh perspective and provides
-            Answers to commonly encountered Questions. It is our prayer that
+            answers to commonly encountered questions. It is our prayer that
             with artful storytelling and practical content, you would find
             solutions and unique direction to make that next step.
             <kbd>Simplifying the Truth with words, pictures and sound</kbd>
           </p>
-        </div>
+         </div>
+      
       </div>
-      <div class="jumbotron jumbotron-fluid" id="quote">
-        <div class="container">
-          <p class="welcome-text text-center">
-            “So, my fine friends—listen to me, and see what you think of this.
-            Isn’t it just <span class="text-muted">common sense</span>— as
-            common as the sense of taste— To put our heads together and figure
-            out what’s going on here?..."
-            <kbd>— Job 34:4</kbd>
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <section class="say-hello ">
-     
-      <div class="container-fluid">
         <div class="row"> 
-        <div class="col-xs-12 col-lg-12">
-         <div class="hello-header ">Hello!</div>
-        </div>
+      
+    
+
+      
         <div class="col-xs-12 col-lg-6">
       
           <span class="input-heading ">Got a question or comment?</span>
@@ -155,7 +147,7 @@
                 placeholder="Your Message"
               />
 
-              <input type="submit" value="Send" />
+              <input type="submit" value="Start conversation" />
             </form>
           </div>
     
@@ -172,7 +164,7 @@
                 name="email"
                 placeholder="Your Email"
               />
-              <input type="submit" value="Join" id="join" />
+              <input type="submit" value="count me in" id="join" />
             </form>
         
           </div>
@@ -191,12 +183,12 @@
       </div>
     </section>
    
-    <footer id="footer-watermark" >
+    <footer class="white"  >
       <div class="container-fluid ">
         <div class="row">
           <div class="col-xs-12 ">
             <h1 class="tagline">
-              A Gallery of Questions and Anecdotes <br class="breakpoint-large"> on Life and its Purpose.
+              A gallery of Questions and Anecdotes <br class="breakpoint-large"> on Life and its Purpose.
             </h1>
             <div id="copyright">
               <h6>©2020 EverydayWhy | All Rights Reserved.</h6>
@@ -221,17 +213,16 @@
           return false;
         });
       });
+ //Switch between welcome and about sections
 
-      //Switch between quote and chew-this-over sections
-
-      $("#chew-this-over").hide();
-      $("#chew-this-over-link").on("click", function () {
-        $("#quote, #chew-this-over").slideToggle(600);
+      $("#about").hide();
+      $("#about-link").on("click", function () {
+        $("#welcome, #about").slideToggle(600);
       });
 
-      //Style "Chew This Over" nav link after each click
-      var chewThisOverLink = document.getElementById("chew-this-over-link");
-      chewThisOverLink.addEventListener("click", function () {
+      //Style "About" nav link after each click
+      var aboutLink = document.getElementById("about-link");
+      aboutLink.addEventListener("click", function () {
         var clicked = document.getElementsByClassName("clicked");
         if (this.className !== "clicked") {
           this.className += "clicked";
