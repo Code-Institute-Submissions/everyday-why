@@ -35,7 +35,157 @@
   </head>
 
   <body class="home">
-  
+    <section>
+      <div
+        class="modal fade"
+        id="say-hello-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="say hello"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content enlightening">
+            <div class="modal-header">
+              <div class="logo-modal" ><a href="questions-anecdotes.html"><img src="EverydayWhyLogo-04.svg" alt="logo"></a></div>
+         
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+               <span id="close-icon" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <section class="say-hello">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-12 hello-header">Hello!</div>
+                    <div class="col-xs-12 col-lg-6">
+                      <p class="hello-text">
+                        We believe that the <kbd>Gospel Of Jesus Christ</kbd> is
+                        the answer to the world's questions. It is our hope that
+                        we are able to create a space which stimulates a fresh
+                        perspective and provides answers to commonly encountered
+                        questions. It is our prayer that with artful
+                        storytelling and practical content, you would find
+                        solutions and unique direction to make that next step.
+                        <kbd
+                          >Simplifying the Truth with words, pictures and
+                          sound</kbd
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                      <span class="input-heading"
+                        >Got a question or comment?</span
+                      >
+                      <div>
+                        <form action="" method="get">
+                          <label for="fname" class="sr-only">First Name</label>
+                          <input
+                            type="text"
+                            id="fname"
+                            name="firstname"
+                            placeholder="Your Name"
+                          />
+
+                          <label for="email" class="sr-only">Email</label>
+                          <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                          />
+
+                          <label for="confirm-email" class="sr-only"
+                            >Confirm Email</label
+                          >
+                          <input
+                            type="text"
+                            id="confirm-email"
+                            name="confirm-email"
+                            placeholder="Confirm Your Email"
+                          />
+                          <label for="message" class="sr-only">Last Name</label>
+                          <input
+                            type="text"
+                            id="message"
+                            name="message"
+                            placeholder="Your Message"
+                          />
+
+                          <input type="submit" value="Start conversation" />
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                      <div class="join-follow" id="say-hello-right">
+                        <div class="newsletter">
+                          <form action="" method="get" class="form-inline">
+                            <span class="input-heading"
+                              >Join our Newsletter</span
+                            >
+                            <label for="email" class="sr-only"
+                              >Join our Newsletter</label
+                            ><br />
+                            <input
+                              type="text"
+                              id="email"
+                              name="email"
+                              placeholder="Your Email"
+                            />
+                            <input
+                              type="submit"
+                              value="count me in"
+                              id="join-modal"
+                            />
+                          </form>
+                        </div>
+                        <div class="icons">
+                          <span class="input-heading">Follow Us</span><br />
+                          <a
+                            href="https://www.instagram.com/abbaabbarex/"
+                            target="_blank"
+                            ><i class="fa fa-instagram" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="https://www.facebook.com/ATA2B"
+                            target="_blank"
+                            ><i class="fa fa-facebook" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer id="footer-modal">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1 class="tagline">
+                      A gallery of Questions and Anecdotes
+                      <br class="breakpoint-large" />
+                      on Life and its Purpose.
+                    </h1>
+                    <div id="copyright-modal">
+                      <div>©2020 EverydayWhy | All Rights Reserved.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
     <header>
       <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
@@ -250,14 +400,14 @@
                   ><span>Freebies</span></a
                 >
               </li>
-               <li class="link">
+              <li class="link">
                 <a href="#" onclick="visibiltySwitch()" id="about-link"
-                  ><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  ><i class="fa fa-address-book" aria-hidden="true"></i>
                   <span>About</span></a
                 >
               </li>
               <li class="link">
-                <a href="say-hello.html">
+                <a data-toggle="modal" href="#say-hello-modal">
                   <i class="fa fa-send" aria-hidden="true"></i>
                   <span>Say hello!</span></a
                 >
@@ -272,44 +422,50 @@
       </nav>
     </header>
     <section class="jumbotron">
-      
-        <div class="container-fluid">
-        <div class="row" >
-            
-            <div class="col-xs-12 " id="about">   <div class="about-header"><i class="fa fa-circle" aria-hidden="true"></i></div>
-             
-    <p id="about-text">Hi, my name is Rex and I’m a creative. <br>
-I am also an autodidact philomath.<br>
-But most of all, I am a Christian. <br>
-I have a curious mind, I strive to understand, <br>
-and so I ask a lot of questions.<br>
-I ask, then research, then talk, then ask again, <br>
-then research and then discuss until i find answers. <br>
-I share a lot of my processes with my wife who is <br>
-a researcher and often helps my process. <br>
-Sometimes, I find new understanding in my son. <br>
-This is a personal diary into my questions about life. <br>
-I think of simple ways to interpret life’s concepts, <br>
-and here, I share my thoughts.<br>
-</p>
- <div><kbd> A Gallery of Questions and Anecdotes on
-              Life and its Purpose</kbd> </div>
-    </div>
-          
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12" id="about">
+            <div class="about-header">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+
+            <p id="about-text">
+              Hi, my name is Rex and I’m a creative. <br />
+              I am also an autodidact philomath. <br class="hidden-xs" />
+              But most of all, I am a Christian. <br />
+              I have a curious mind, I strive to understand,
+              <br class="hidden-xs" />
+              and so I ask a lot of questions. <br class="hidden-xs" />
+              I ask, then research, then talk, then ask again,
+              <br class="hidden-xs" />
+              then research and then discuss until I find answers. <br />
+              I share a lot of my processes with my wife who is
+              <br class="hidden-xs" />
+              a researcher and often helps my process. <br class="hidden-xs" />
+              Sometimes, I find new understanding in my son. <br />
+              This is my
+              <kbd class="about-tagline"
+                >gallery of Questions and Anecdotes on life and its
+                purpose.</kbd
+              ><br class="hidden-xs" />
+              I think of simple ways to interpret life’s concepts,
+              <br class="hidden-xs" />
+              and here, I share my thoughts. <br class="hidden-xs" />
+            </p>
+          </div>
         </div>
         <div class="row">
-        <div class="col-xs-12" id="welcome"><div>Keep vigilant watch over your heart;
-    that’s where life starts. </div> <kbd>Pro. 4 | 23</kbd>
-             
-    
+          <div class="col-xs-12" id="welcome">
+            <div>
+              Keep vigilant watch over your heart; that’s where life starts.
+            </div>
+            <kbd>Pro. 4 | 23</kbd>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-      
     </section>
     <section>
       <div class="container-fluid questions">
-     
         <div class="row article-collection-bg">
           <div class="col-xs-12">
             <div class="article-block">
@@ -1473,7 +1629,7 @@ and here, I share my thoughts.<br>
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-lg-2 icons">
-            <a href="say-hello.html" class="hello"><span>Say Hello!</span></a>
+            <a data-toggle="modal" href="#say-hello-modal" class="hello"><span>Say Hello!</span></a>
             <a href="mailto:rex@everydaywhy.me" target="_blank"
               ><i class="fa fa-envelope" aria-hidden="true"></i
             ></a>
@@ -1494,7 +1650,7 @@ and here, I share my thoughts.<br>
                 name="email"
                 placeholder="Your Email"
               />
-              <input type="submit" value="Join" id="join" />
+              <input type="submit" value="count me in" id="join" />
             </form>
           </div>
 
@@ -1510,7 +1666,7 @@ and here, I share my thoughts.<br>
           </div>
         </div>
       </div>
-    </footer >
+    </footer>
     <script>
       // Scroll to the top of the page - code project
       jQuery(document).ready(function ($) {
@@ -1530,7 +1686,6 @@ and here, I share my thoughts.<br>
       // Smooth scroll to active article
 
       $("#accordion").on("shown.bs.collapse", function () {
-          
         var padding = 73;
         var panel = $(this).find(".in");
 
@@ -1599,7 +1754,7 @@ and here, I share my thoughts.<br>
             var jQuerytargetAccordion = jQuerytarget.find(".panel-collapse");
             console.log(jQuerytargetAccordion);
             jQuerytarget.collapse("show");
-            window.location.href = window.location.href.replace(/#.*$/, '#');
+            window.location.href = window.location.href.replace(/#.*$/, "#");
           }
         }
       }

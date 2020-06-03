@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville: 100,200,300,400,500,600,700,800,900|Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono: 100,200,300,400,500,600,700,800,900 &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
 
 /*----------------------------------------------Utilities----------------------------------------*/
@@ -9,10 +10,12 @@ body {
 
 kbd {
   font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
   background-color: #1b3a32;
 }
 mark {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
   background-color: #ffdb26;
 }
 
@@ -255,14 +258,15 @@ margin: 0 auto;
  position: relative;
  top:0;
  left:0;
-width: 500px;
+width: 550px;
 color: #1b3a32;
 }
 
 #welcome  kbd {
+    font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
     color: #1b3a32;
   font-size: 0.6em;
-  font-weight: 700;
   background-color: #ffdb26; 
 }
 
@@ -287,25 +291,27 @@ color: #1b3a32;
 }
 
 
-#about kbd{
-    color: #fff;
-    margin-top: 10px;
-  font-size: 17px;
-font-weight: 600;
-}
+
 
 #about-text {
    line-height: 1.1em;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 700;
-  font-size: 1.9em;
+ font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1.6em;
   letter-spacing: 0px;
 padding-bottom: 20px;
- display: inline-block;
+ display: block;
 color: #dd98f0;
 width: 100%;
+}
 
+#about-text .about-tagline{
+    font-family: "Libre Franklin", sans-serif;
 
+    color: #fff;
+    margin-top: 10px;
+  font-size: 0.8em;
+font-weight: 600;
 }
 
 #about .fa{
@@ -382,9 +388,10 @@ width: 100%;
 }
 
 .article-block .panel-group .panel .panel-body {
+    font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
   background-color: transparent;
   color: #1b3a32;
-  font-weight: 500;
   padding: 4% 5%;
   margin: 0 auto;
   font-size: 1.4em;
@@ -448,12 +455,24 @@ width: 100%;
 
 footer {
   color: #1b3a32;
-  padding: 3% 3%;
+  padding: 40px 3%;
   font-family: "Libre Franklin", sans-serif;
   font-size: 2em;
   background-color: transparent;
   border-radius: 0;
-  border-top: 1px solid #ffdb26;  
+  border-top: 2px solid #ffdb26; 
+  position: relative;
+ 
+}
+#footer-modal {
+  color: #1b3a32;
+  padding: 40px 3%;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2em;
+  background-color: transparent;
+  border-radius: 0;
+  position: relative;
+  margin: 0 auto;
  
 }
 
@@ -514,7 +533,10 @@ footer .newsletter form #email {
   border-bottom: 1px solid #1b3a32;
    padding-top: 10px;
    margin: 0;
-  font-family: "Libre Baskerville", serif;
+    font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 16px;
+
  
  
 }
@@ -537,11 +559,15 @@ footer .newsletter form #join:hover {
   
 }
 
-#copyright {
+#copyright,  #copyright-modal {
+    font-family: "Libre Franklin", sans-serif;
     font-size: 0.4em;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0; 
+  margin-top: 10px;
+  
 }
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -560,11 +586,68 @@ select:-webkit-autofill:focus {
 
 
 /*----------------------------------------------Say-Hello----------------------------------------*/
+.modal-content{
+    background-color: #ffdb26;  
+}
 
+
+.modal-header{
+    position: relative;
+    margin: 30px 0;
+    border: none;
+    padding-bottom: 20px;
+    background-color: transparent;
+    
+}
+
+
+.logo-modal {
+  position: relative;
+   padding-bottom: 3%;
+    
+}
+
+.logo-modal img{
+    width: 210px;
+    height:auto;
+     top: 0;
+    position: absolute;
+    left: 4%;
+   
+}
+#close-icon{
+     font-size: 60px;
+     font-weight: 100;
+     position: absolute;
+     top: 0;
+     right: 3%;
+     opacity: 1;
+     color: #1b3a32;
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+.modal-footer{
+    background-color: transparent;
+}
+
+.cloe{
+    width: 100%;
+}
 .say-hello {
     
  margin:0 auto;
-  padding: 5% 3%;
+  padding: 2% 3% 2% 3%;
   color: #1b3a32;
 }
 
@@ -575,16 +658,17 @@ select:-webkit-autofill:focus {
   font-size: 7em;
   letter-spacing: 0px;
 padding-bottom: 20px;
+padding-top: 40px;
  display: inline-block;
 color: #1b3a32;
 
 
 }
 
-.say-hello .about-text {
+.say-hello .hello-text {
   line-height: 1.3em;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
   font-size: 1.3em;
   letter-spacing: 0px;
 padding-bottom: 40px;
@@ -659,8 +743,9 @@ margin-left:0;
 .say-hello form #message {
   padding-top: 30px;
   border-bottom: 1px solid #457165;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
+   font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+    font-size: 1.3em;
   
 }
 
@@ -699,63 +784,7 @@ text-decoration: none;
   padding-bottom: 3.6em;
 }
 
-.dark .tagline, .dark #copyright{
-      color: #457165;
-      
-}
 
-#footer-dark {
-    color: #fff;
-    background-color: #1b3a32;
-     box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.175),
-    -30px 30px 10px rgba(0, 0, 0, 0.035),
-    -55px -30px 90px rgba(0, 0, 0, 0.336) inset;
-}
-
-
-
-#watermark {
-  background: url("../images/Isotype-watermark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-left:0;
- top:-5%;
-  min-height: 100%;
-  width:100%;
-  opacity: 100%;
-  mix-blend-mode: screen;
-      
-}
-
-#bg-hello {
-  background: url("../images/landing-page.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  right:0%;
-  bottom:0%;
-  min-height: 100%;
-  width: 100%;
-  height:  auto;
-  opacity: 100%;
-  
-}
-
-#bg-question {
-  background: url("../images/Isotype-watermark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  top:0%;
-  min-height: 100%;
-  width: 100%;
-  opacity: 100%;
-  mix-blend-mode: screen;     
-}
 
 /*----------------------------------------------Freebies Page----------------------------------------*/
 
@@ -803,8 +832,8 @@ width:60%;
 
 .freebies .freebies-header-tagline{
    line-height: 1.3em;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 500;
+   font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
   font-size: 1.3em;
   letter-spacing: 0px;
 padding-bottom: 40px;
@@ -1340,7 +1369,7 @@ padding-right: 5px;
 }
 
 
-.say-hello .about-text {
+.say-hello .hello-text {
 width: 100%;
 }
 
@@ -1422,6 +1451,16 @@ width: 100%;
     transition: font-size ease-in-out 0.2s;
 }
 
+#welcome {
+height: 20vh;
+
+}
+
+#about {
+  height: 50vh;
+
+}
+
   
 #about kbd{
     margin-top: 10px;
@@ -1439,7 +1478,7 @@ padding-bottom: 20px;
 
 #about .fa{
     color:#ffdb26;
-    font-size: 600px;
+    font-size: 500px;
     top: 0;
     left: 100px;
  
@@ -1484,8 +1523,7 @@ padding-bottom: 20px;
   
 }
 
-.say-hello {  
-    padding: 3% 3% 0 3%; 
+
 
 }
 
@@ -1506,42 +1544,44 @@ padding-bottom: 20px;
   
 #welcome {
   line-height: 0.98em;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 0px;
-height: 30vh;
-width: 100%;
+height: 20vh;
+width: 60%;
 }
 
 #welcome  kbd {
-  font-size: 0.6em;
+  font-size: 0.65em;
   font-weight: 700;
 }
 
 
 #about {
-  height: 60vh;
+height: 100%;
+  width:100%;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
 
 
 #about kbd{
     margin-top: 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #about-text {
-   line-height: 1.3em;
-  font-size: 0.8em;
+   line-height: 1.2em;
+  font-size: 1.2em;
   letter-spacing: 0px;
-padding-bottom: 20px;
-
-
+padding-bottom: 10px;
 }
+
 
 #about .fa{
     color:#ffdb26;
-    font-size: 400px;
-    top: 0;
-    left: 100px;
+    font-size: 300px;
+    top: 20px;
+    left: 80px;
  
 } 
 
@@ -1556,15 +1596,7 @@ padding-bottom: 20px;
     font-size: 1.2em;
   }
 
-  footer .plain {
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-
-footer:not(.plain)  {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
+ 
   footer .tagline {
     line-height: 1em;
     font-size: 0.6em;
@@ -1615,7 +1647,71 @@ width:60%;
 width:100%;
 }
  
+ #welcome {
+height: 20vh;
+  width:100%;
+}
+ #about {
+height: 100%;
+  width:100%;
+  padding-bottom: 20px;
+}
+#about .fa{
+    color:#ffdb26;
+    font-size: 350px;
+    top: 20px;
+    left: 80px;
+ 
+} 
 
+.modal-header{
+    position: relative;
+    margin: 20px 0;
+    border: none;
+    padding-bottom: 20px;
+    background-color: transparent;
+    
+}
+
+
+.logo-modal {
+  position: relative;
+   padding-bottom: 3%;
+    
+}
+
+.logo-modal img{
+    width: 160px;
+    height:auto;
+     top: 0;
+    position: absolute;
+    left: 4%;
+   
+}
+#close-icon{
+     font-size: 40px;
+     font-weight: 100;
+     position: absolute;
+     top: 0;
+     right: 3%;
+     opacity: 1;
+     color: #1b3a32;
+}
+#footer-modal {
+  color: #1b3a32;
+  padding: 40px 0.5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2em;
+  background-color: transparent;
+  border-radius: 0;
+  border-top: 2px solid #1b3a32;  
+  position: relative;
+  margin: 0 auto;
+ 
+}
+
+.say-hello {  
+    padding: 0.5% 0.5% 0 0.5%; 
 }
 
 

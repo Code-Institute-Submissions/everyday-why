@@ -35,6 +35,157 @@
   </head>
 
   <body  class="illuminating">
+  <section>
+      <div
+        class="modal fade"
+        id="say-hello-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="say hello"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content enlightening">
+            <div class="modal-header">
+              <div class="logo-modal" ><a href="questions-anecdotes.html"><img src="EverydayWhyLogo-04.svg" alt="logo"></a></div>
+         
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+               <span id="close-icon" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <section class="say-hello">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-12 hello-header">Hello!</div>
+                    <div class="col-xs-12 col-lg-6">
+                      <p class="hello-text">
+                        We believe that the <kbd>Gospel Of Jesus Christ</kbd> is
+                        the answer to the world's questions. It is our hope that
+                        we are able to create a space which stimulates a fresh
+                        perspective and provides answers to commonly encountered
+                        questions. It is our prayer that with artful
+                        storytelling and practical content, you would find
+                        solutions and unique direction to make that next step.
+                        <kbd
+                          >Simplifying the Truth with words, pictures and
+                          sound</kbd
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                      <span class="input-heading"
+                        >Got a question or comment?</span
+                      >
+                      <div>
+                        <form action="" method="get">
+                          <label for="fname" class="sr-only">First Name</label>
+                          <input
+                            type="text"
+                            id="fname"
+                            name="firstname"
+                            placeholder="Your Name"
+                          />
+
+                          <label for="email" class="sr-only">Email</label>
+                          <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                          />
+
+                          <label for="confirm-email" class="sr-only"
+                            >Confirm Email</label
+                          >
+                          <input
+                            type="text"
+                            id="confirm-email"
+                            name="confirm-email"
+                            placeholder="Confirm Your Email"
+                          />
+                          <label for="message" class="sr-only">Last Name</label>
+                          <input
+                            type="text"
+                            id="message"
+                            name="message"
+                            placeholder="Your Message"
+                          />
+
+                          <input type="submit" value="Start conversation" />
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                      <div class="join-follow" id="say-hello-right">
+                        <div class="newsletter">
+                          <form action="" method="get" class="form-inline">
+                            <span class="input-heading"
+                              >Join our Newsletter</span
+                            >
+                            <label for="email" class="sr-only"
+                              >Join our Newsletter</label
+                            ><br />
+                            <input
+                              type="text"
+                              id="email"
+                              name="email"
+                              placeholder="Your Email"
+                            />
+                            <input
+                              type="submit"
+                              value="count me in"
+                              id="join-modal"
+                            />
+                          </form>
+                        </div>
+                        <div class="icons">
+                          <span class="input-heading">Follow Us</span><br />
+                          <a
+                            href="https://www.instagram.com/abbaabbarex/"
+                            target="_blank"
+                            ><i class="fa fa-instagram" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="https://www.facebook.com/ATA2B"
+                            target="_blank"
+                            ><i class="fa fa-facebook" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer id="footer-modal">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1 class="tagline">
+                      A gallery of Questions and Anecdotes
+                      <br class="breakpoint-large" />
+                      on Life and its Purpose.
+                    </h1>
+                    <div id="copyright-modal">
+                      <div>©2020 EverydayWhy | All Rights Reserved.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
     <header>
       <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
@@ -68,12 +219,12 @@
               </li>
               <li class="link">
                 <a href="#" onclick="visibiltySwitch()" id="about-link"
-                  ><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  ><i class="fa fa-address-book" aria-hidden="true"></i>
                   <span>About</span></a
                 >
               </li>
               <li class="link">
-                <a href="say-hello.html" class="hello-link">
+                <a data-toggle="modal" href="#say-hello-modal" class="hello-link">
                   <i class="fa fa-send" aria-hidden="true"></i>
                   <span>Say Hello!</span></a
                 >
@@ -108,8 +259,8 @@ This is a personal diary into my questions about life. <br>
 I think of simple ways to interpret life’s concepts, <br>
 and here, I share my thoughts.<br>
 </p>
- <div><kbd> A Gallery of Questions and Anecdotes on
-              Life and its Purpose</kbd> </div>
+ <!-- <div><kbd> A Gallery of Questions and Anecdotes on
+              Life and its Purpose</kbd> </div> -->
     </div>
           
         </div>
@@ -540,11 +691,11 @@ and here, I share my thoughts.<br>
       
     </section>
 
-    <footer class="white">
+    <footer class="happy">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-lg-2 icons">
-            <a href="say-hello.html" class="hello"><span>Say Hello!</span></a>
+            <a data-toggle="modal" href="#say-hello-modal" class="hello"><span>Say Hello!</span></a>
             <a href="mailto:rex@everydaywhy.me" target="_blank"
               ><i class="fa fa-envelope" aria-hidden="true"></i
             ></a>
@@ -571,12 +722,12 @@ and here, I share my thoughts.<br>
 
           <div class="col-sm-12 col-lg-3">
             <h1 class="tagline">
-              A gallery of Questions and Anecdotes on
+              A Gallery of Questions and Anecdotes on
               <br class="breakpoint-large" />
               Life and its Purpose.
             </h1>
             <div id="copyright">
-              <h6>©2020 EverydayWhy | All Rights Reserved.</h6>
+              <div>©2020 EverydayWhy | All Rights Reserved.</div>
             </div>
           </div>
         </div>
