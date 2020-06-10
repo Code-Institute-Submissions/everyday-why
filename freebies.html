@@ -34,8 +34,8 @@
     <title>Everyday Why</title>
   </head>
 
-  <body  class="illuminating">
-  <section>
+  <body class="illuminating">
+    <section>
       <div
         class="modal fade"
         id="say-hello-modal"
@@ -47,18 +47,22 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content enlightening">
             <div class="modal-header">
-              <div class="logo-modal" ><a href="questions-anecdotes.html"><img src="EverydayWhyLogo-04.svg" alt="logo"></a></div>
-         
+              <div class="logo-modal">
+                <a href="questions-anecdotes.html"
+                  ><img src="images/EverydayWhyLogo-04.svg" alt="logo"
+                /></a>
+              </div>
+
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
-               <span id="close-icon" aria-hidden="true">&times;</span>
+                <span id="close-icon" aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body">
               <section class="say-hello">
                 <div class="container-fluid">
                   <div class="row">
@@ -92,6 +96,7 @@
                             id="fname"
                             name="firstname"
                             placeholder="Your Name"
+                            required
                           />
 
                           <label for="email" class="sr-only">Email</label>
@@ -100,6 +105,7 @@
                             id="email"
                             name="email"
                             placeholder="Your Email"
+                            required
                           />
 
                           <label for="confirm-email" class="sr-only"
@@ -110,6 +116,7 @@
                             id="confirm-email"
                             name="confirm-email"
                             placeholder="Confirm Your Email"
+                            required
                           />
                           <label for="message" class="sr-only">Last Name</label>
                           <input
@@ -117,6 +124,7 @@
                             id="message"
                             name="message"
                             placeholder="Your Message"
+                            required
                           />
 
                           <input type="submit" value="Start conversation" />
@@ -138,6 +146,7 @@
                               id="email"
                               name="email"
                               placeholder="Your Email"
+                              required
                             />
                             <input
                               type="submit"
@@ -165,23 +174,22 @@
                 </div>
               </section>
               <footer id="footer-modal">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h1 class="tagline">
-                      A gallery of Questions and Anecdotes
-                      <br class="breakpoint-large" />
-                      on Life and its Purpose.
-                    </h1>
-                    <div id="copyright-modal">
-                      <div>©2020 EverydayWhy | All Rights Reserved.</div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h1 class="tagline">
+                        A gallery of Questions and Anecdotes
+                        <br class="breakpoint-large" />
+                        on Life and its Purpose.
+                      </h1>
+                      <div id="copyright-modal">
+                        <div>©2020 EverydayWhy | All Rights Reserved.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </footer>
+              </footer>
             </div>
-            
           </div>
         </div>
       </div>
@@ -224,7 +232,11 @@
                 >
               </li>
               <li class="link">
-                <a data-toggle="modal" href="#say-hello-modal" class="hello-link">
+                <a
+                  data-toggle="modal"
+                  href="#say-hello-modal"
+                  class="hello-link"
+                >
                   <i class="fa fa-send" aria-hidden="true"></i>
                   <span>Say Hello!</span></a
                 >
@@ -238,464 +250,477 @@
         >
       </nav>
     </header>
-     <section class="jumbotron">
-      
-        <div class="container-fluid">
-        <div class="row" >
-            
-            <div class="col-xs-12 " id="about">   <div class="about-header"><i class="fa fa-circle" aria-hidden="true"></i></div>
-             
-    <p id="about-text">Hi, my name is Rex and I’m a creative. <br>
-I am also an autodidact philomath.<br>
-But most of all, I am a Christian. <br>
-I have a curious mind, I strive to understand, <br>
-and so I ask a lot of questions.<br>
-I ask, then research, then talk, then ask again, <br>
-then research and then discuss until i find answers. <br>
-I share a lot of my processes with my wife who is <br>
-a researcher and often helps my process. <br>
-Sometimes, I find new understanding in my son. <br>
-This is a personal diary into my questions about life. <br>
-I think of simple ways to interpret life’s concepts, <br>
-and here, I share my thoughts.<br>
-</p>
- <!-- <div><kbd> A Gallery of Questions and Anecdotes on
+    <section class="jumbotron">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12" id="about">
+            <div class="about-header">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+
+            <p id="about-text">
+              Hi, my name is Rex and I’m a creative. <br />
+              I am also an autodidact philomath.<br />
+              But most of all, I am a Christian. <br />
+              I have a curious mind, I strive to understand, <br />
+              and so I ask a lot of questions.<br />
+              I ask, then research, then talk, then ask again, <br />
+              then research and then discuss until I find answers. <br />
+              I share a lot of my processes with my wife who is <br />
+              a researcher and often helps my process. <br />
+              Sometimes, I find new understanding in my son. <br />
+              This is a personal diary into my questions about life. <br />
+              I think of simple ways to interpret life’s concepts, <br />
+              and here, I share my thoughts.<br />
+            </p>
+            <!-- <div><kbd> A Gallery of Questions and Anecdotes on
               Life and its Purpose</kbd> </div> -->
-    </div>
-          
+          </div>
         </div>
         <div class="row">
-        <div class="col-xs-12" id="welcome"><div>Keep vigilant watch over your heart;
-    that’s where life starts. </div> <kbd>Pro. 4 | 23</kbd>
-             
-    
+          <div class="col-xs-12" id="welcome">
+            <div>
+              Keep vigilant watch over your heart; that’s where life starts.
+            </div>
+            <kbd>Pro. 4 | 23</kbd>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-      
     </section>
 
     <section class="freebies">
-      <div class="container-fluid  ">
-       <div class="row">
-         <div class="col-xs-12 col-lg-12 freebies-header">
-           Freely you have received, freely give.
-         </div>
-         <div class="col-xs-12 col-lg-12 ">
-         <p class="freebies-header-tagline">
-            This space contains the project files for every featured image
-            contained in our
-            <kbd><a href="questions-anecdotes.html">Questions & Anecdotes.</a></kbd> Made
-            for the benefit of sharing in the hope that it helps someone.
-          </p>
-         </div>
-         </div>
- <div class="container-fluid  ">
-       <div class="row">
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">The Anatomy of a Question</div>
-              <li class="list-group-item" href="#">
-                <a class="card-link"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item" href="#">
-                <a class="card-link"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="questions-anecdotes.html#article-one"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 freebies-header">
+            Freely you have received, freely give.
           </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
+          <div class="col-xs-12 col-lg-12">
+            <p class="freebies-header-tagline">
+              This space contains the project files for every featured image
+              contained in our
+              <kbd
+                ><a href="questions-anecdotes.html"
+                  >Questions & Anecdotes.</a
+                ></kbd
+              >
+              Made for the benefit of sharing in the hope that it helps someone.
+            </p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">The Anatomy of a Question</div>
+                <li class="list-group-item" href="#">
+                  <a class="card-link"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item" href="#">
+                  <a class="card-link"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-one"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
 
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Genesis</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="questions-anecdotes.html#article-two"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Identity</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-three"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container plain">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Origin</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-four"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Genesis</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-two"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Identity</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-three"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container plain">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Origin</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-four"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-3 link-container plain">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">The Destination</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-five"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container inspiring">
-            <div class="test-image-half"></div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container plain">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">The Destination</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-five"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container inspiring">
+              <div class="test-image-half"></div>
 
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Hope</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="questions-anecdotes.html#article-six"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container educational">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Trust Issues</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-seven"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Light your World</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-eight"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Hope</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-six"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container educational">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Trust Issues</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-seven"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Light your World</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-eight"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="row">
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container plain">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">True Riches</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-nine"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container plain">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">True Riches</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-nine"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
 
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Thinking of you</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="questions-anecdotes.html#article-ten"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Praise-Think</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-eleven"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container inspiring">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Different-Think</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-twelve"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Thinking of you</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-ten"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Praise-Think</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-eleven"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container inspiring">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Different-Think</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-twelve"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="row">
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container plain">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Excellence-Think</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-thirteen"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container inspiring">
-            <div class="test-image-half"></div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container plain">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Excellence-Think</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-thirteen"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container inspiring">
+              <div class="test-image-half"></div>
 
-            <ul class="list-group list-group-flush">
-              <div class="image-title">Little Things, Big Difference</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-fourteen"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">Little Things, Big Difference</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-fourteen"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 link-container happy">
+              <div class="test-image-half"></div>
+              <ul class="list-group list-group-flush">
+                <div class="image-title">The King is Coming</div>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Hi-Res Image</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a class="card-link" href="#"
+                    ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    Download Project Files</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    class="card-link"
+                    href="questions-anecdotes.html#article-fifteen"
+                    ><i class="fa fa-link" aria-hidden="true"></i> Go to
+                    Article</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-xs-12 col-md-6  col-lg-3 link-container happy">
-            <div class="test-image-half"></div>
-            <ul class="list-group list-group-flush">
-              <div class="image-title">The King is Coming</div>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Hi-Res Image</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a class="card-link" href="#"
-                  ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                  Download Project Files</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a
-                  class="card-link"
-                  href="questions-anecdotes.html#article-fifteen"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Go to
-                  Article</a
-                >
-              </li>
-            </ul>
-          </div>
-       
+        </div>
       </div>
-      </div>
-      </div>
-      
     </section>
 
     <footer class="happy">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-lg-2 icons">
-            <a data-toggle="modal" href="#say-hello-modal" class="hello"><span>Say Hello!</span></a>
+            <a data-toggle="modal" href="#say-hello-modal" class="hello"
+              ><span>Say Hello!</span></a
+            >
             <a href="mailto:rex@everydaywhy.me" target="_blank"
               ><i class="fa fa-envelope" aria-hidden="true"></i
             ></a>
@@ -715,19 +740,20 @@ and here, I share my thoughts.<br>
                 id="email"
                 name="email"
                 placeholder="Your Email"
+                required
               />
-              <input type="submit" value="Join" id="join" />
+              <input type="submit" value="count me in" id="join" />
             </form>
           </div>
 
           <div class="col-sm-12 col-lg-3">
-            <h1 class="tagline">
+            <div class="tagline">
               A Gallery of Questions and Anecdotes on
               <br class="breakpoint-large" />
               Life and its Purpose.
-            </h1>
+            </div>
             <div id="copyright">
-              <div>©2020 EverydayWhy | All Rights Reserved.</div>
+              ©2020 EverydayWhy | All Rights Reserved.
             </div>
           </div>
         </div>
@@ -766,8 +792,6 @@ and here, I share my thoughts.<br>
           clicked[0].className = clicked[0].className.replace("clicked", "");
         }
       });
-
-      
     </script>
   </body>
 </html>

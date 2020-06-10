@@ -25,17 +25,16 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <title>Everyday Why</title>
   </head>
 
   <body class="home">
-    <section>
+
+  <!-- Say Hello modal with contact form begins here -->
+    <section class="say-hello-section">
       <div
         class="modal fade"
         id="say-hello-modal"
@@ -47,18 +46,22 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content enlightening">
             <div class="modal-header">
-              <div class="logo-modal" ><a href="questions-anecdotes.html"><img src="EverydayWhyLogo-04.svg" alt="logo"></a></div>
-         
+              <div class="logo-modal">
+                <a href="questions-anecdotes.html"
+                  ><img src="images/EverydayWhyLogo-04.svg" alt="logo"
+                /></a>
+              </div>
+
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
-               <span id="close-icon" aria-hidden="true">&times;</span>
+                <span id="close-icon" aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body">
               <section class="say-hello">
                 <div class="container-fluid">
                   <div class="row">
@@ -92,6 +95,7 @@
                             id="fname"
                             name="firstname"
                             placeholder="Your Name"
+                            required
                           />
 
                           <label for="email" class="sr-only">Email</label>
@@ -100,6 +104,7 @@
                             id="email"
                             name="email"
                             placeholder="Your Email"
+                            required
                           />
 
                           <label for="confirm-email" class="sr-only"
@@ -110,6 +115,7 @@
                             id="confirm-email"
                             name="confirm-email"
                             placeholder="Confirm Your Email"
+                            required
                           />
                           <label for="message" class="sr-only">Last Name</label>
                           <input
@@ -117,6 +123,7 @@
                             id="message"
                             name="message"
                             placeholder="Your Message"
+                            required
                           />
 
                           <input type="submit" value="Start conversation" />
@@ -128,7 +135,7 @@
                         <div class="newsletter">
                           <form action="" method="get" class="form-inline">
                             <span class="input-heading"
-                              >Join our Newsletter</span
+                              >Receive updates?</span
                             >
                             <label for="email" class="sr-only"
                               >Join our Newsletter</label
@@ -138,6 +145,7 @@
                               id="email"
                               name="email"
                               placeholder="Your Email"
+                              required
                             />
                             <input
                               type="submit"
@@ -165,27 +173,28 @@
                 </div>
               </section>
               <footer id="footer-modal">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h1 class="tagline">
-                      A gallery of Questions and Anecdotes
-                      <br class="breakpoint-large" />
-                      on Life and its Purpose.
-                    </h1>
-                    <div id="copyright-modal">
-                      <div>©2020 EverydayWhy | All Rights Reserved.</div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h1 class="tagline">
+                        A gallery of Questions and Anecdotes
+                        <br class="breakpoint-large" />
+                        on Life and its Purpose.
+                      </h1>
+                      <div id="copyright-modal">
+                        <div>©2020 EverydayWhy | All Rights Reserved.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </footer>
+              </footer>
             </div>
-            
           </div>
         </div>
       </div>
     </section>
+  
+  <!-- Navigational elements begin here -->
     <header>
       <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
@@ -421,6 +430,8 @@
         >
       </nav>
     </header>
+  
+  <!-- Welcome and About sections begin here with swappable feature on click of About nav button -->
     <section class="jumbotron">
       <div class="container-fluid">
         <div class="row">
@@ -464,6 +475,8 @@
         </div>
       </div>
     </section>
+
+    <!-- All articles and images begin here -->
     <section>
       <div class="container-fluid questions">
         <div class="row article-collection-bg">
@@ -475,7 +488,7 @@
                 role="tablist"
                 aria-multiselectable="true"
               >
-                <div class="panel panel-default panel-one happy">
+                <article class="panel panel-default panel-one happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -543,8 +556,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-two happy">
+                </article>
+                <article class="panel panel-default panel-two happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -611,8 +624,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-three happy">
+                </article>
+                <article class="panel panel-default panel-three happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -687,8 +700,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-four plain">
+                </article>
+                <article class="panel panel-default panel-four plain">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -783,8 +796,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-five plain">
+                </article>
+                <article class="panel panel-default panel-five plain">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -853,8 +866,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-six inspiring">
+                </article>
+                <article class="panel panel-default panel-six inspiring">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -935,8 +948,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-seven educational">
+                </article>
+                <article class="panel panel-default panel-seven educational">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1051,8 +1064,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-eight happy">
+                </article>
+                <article class="panel panel-default panel-eight happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1125,8 +1138,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-nine plain">
+                </article>
+                <article class="panel panel-default panel-nine plain">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1221,8 +1234,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-ten happy">
+                </article>
+                <article class="panel panel-default panel-ten happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1286,8 +1299,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-eleven happy">
+                </article>
+                <article class="panel panel-default panel-eleven happy">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1316,8 +1329,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-twelve inspiring">
+                </article>
+                <article class="panel panel-default panel-twelve inspiring">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1410,8 +1423,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-thirteen plain">
+                </article>
+                <article class="panel panel-default panel-thirteen plain">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1503,8 +1516,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-fourteen inspiring">
+                </article>
+                <article class="panel panel-default panel-fourteen inspiring">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1577,8 +1590,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="panel panel-default panel-fifteen plain">
+                </article>
+                <article class="panel panel-default panel-fifteen plain">
                   <div
                     class="panel-heading"
                     role="tab"
@@ -1618,7 +1631,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -1629,7 +1642,9 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-lg-2 icons">
-            <a data-toggle="modal" href="#say-hello-modal" class="hello"><span>Say Hello!</span></a>
+            <a data-toggle="modal" href="#say-hello-modal" class="hello"
+              ><span>Say Hello!</span></a
+            >
             <a href="mailto:rex@everydaywhy.me" target="_blank"
               ><i class="fa fa-envelope" aria-hidden="true"></i
             ></a>
@@ -1649,6 +1664,7 @@
                 id="email"
                 name="email"
                 placeholder="Your Email"
+                required
               />
               <input type="submit" value="count me in" id="join" />
             </form>
@@ -1668,6 +1684,7 @@
       </div>
     </footer>
     <script>
+
       // Scroll to the top of the page - code project
       jQuery(document).ready(function ($) {
         $(window).scroll(function () {
@@ -1684,7 +1701,6 @@
       });
 
       // Smooth scroll to active article
-
       $("#accordion").on("shown.bs.collapse", function () {
         var padding = 73;
         var panel = $(this).find(".in");
@@ -1699,25 +1715,23 @@
       });
 
       //Switch between welcome and about sections
-
-      $("#about").hide();
-      $("#about-link").on("click", function () {
-        $("#welcome, #about").slideToggle(600);
-      });
-
-      //Style "About" nav link after each click
-      var aboutLink = document.getElementById("about-link");
-      aboutLink.addEventListener("click", function () {
-        var clicked = document.getElementsByClassName("clicked");
-        if (this.className !== "clicked") {
-          this.className += "clicked";
-        } else {
-          clicked[0].className = clicked[0].className.replace("clicked", "");
-        }
-      });
+	$("#about").hide();
+	$("#about-link").on("click", function () {
+	$("#welcome, #about").slideToggle(600);
+	});
+	
+	//Style "About" nav link after each click
+	var aboutLink = document.getElementById("about-link");
+	aboutLink.addEventListener("click", function () {
+	var clicked = document.getElementsByClassName("clicked");
+	if (this.className !== "clicked") {
+	this.className += "clicked";
+	} else {
+	clicked[0].className = clicked[0].className.replace("clicked", "");
+	}
+	});
 
       //Smooth scroll to articles  from "Questions &  Anecdotes" dropdown menu
-
       $("a.scroll").click(function (event) {
         var target = $("[name=" + this.hash.slice(1) + "]");
 

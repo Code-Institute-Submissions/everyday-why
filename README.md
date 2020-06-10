@@ -1,4 +1,4 @@
-<img src="images/EverydayWhyLogo.svg" style="margin: 0;" width="20%" height="20%">
+<img src="images/EverydayWhyLogo-01.svg" style="margin: 0;" width="20%" height="20%">
 
 Welcome Rexayo,
 
