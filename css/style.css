@@ -356,11 +356,10 @@ hr {
   height: 500px;
   margin: 50px 0px;
   background-color: transparent;
- 
 }
-.genesis-image{
-background: url("../images/Genesis.png");
- background-position: center;
+.genesis-image {
+  background: url("../images/Genesis.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -368,9 +367,9 @@ background: url("../images/Genesis.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.identity-image{
-background: url("../images/Identity.png");
- background-position: center;
+.identity-image {
+  background: url("../images/Identity.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -378,9 +377,9 @@ background: url("../images/Identity.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.origin-image{
-background: url("../images/Origin.png");
- background-position: center;
+.origin-image {
+  background: url("../images/Origin.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -388,9 +387,9 @@ background: url("../images/Origin.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.destination-image{
-background: url("../images/Destination.png");
- background-position: center;
+.destination-image {
+  background: url("../images/Destination.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -398,9 +397,9 @@ background: url("../images/Destination.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.hope-image{
-background: url("../images/Hope.png");
- background-position: center;
+.hope-image {
+  background: url("../images/Hope.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -408,9 +407,9 @@ background: url("../images/Hope.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.trust-issues-image{
-background: url("../images/Trust-Issues.png");
- background-position: center;
+.trust-issues-image {
+  background: url("../images/Trust-Issues.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -418,9 +417,9 @@ background: url("../images/Trust-Issues.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.light-image{
-background: url("../images/Light_your_world.png");
- background-position: center;
+.light-image {
+  background: url("../images/Light_your_world.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -428,9 +427,9 @@ background: url("../images/Light_your_world.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.different-think-image{
-background: url("../images/Trust-Issues.png");
- background-position: center;
+.different-think-image {
+  background: url("../images/Trust-Issues.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -438,9 +437,9 @@ background: url("../images/Trust-Issues.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-.the-king-image{
-background: url("../images/Trust-Issues.png");
- background-position: center;
+.the-king-image {
+  background: url("../images/Trust-Issues.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
   min-height: 500px;
@@ -448,7 +447,6 @@ background: url("../images/Trust-Issues.png");
   margin: 50px 0px;
   background-color: transparent;
 }
-
 
 .article-block .panel-group .panel .panel-heading a:before {
   float: right;
@@ -798,22 +796,14 @@ select:-webkit-autofill:focus {
   padding-bottom: 3.6em;
 }
 
-/*----------------------------------------------Freebies Page----------------------------------------*/
+/*----------------------------------------------gallery Page----------------------------------------*/
 
-.freebies {
+.gallery {
   padding: 5% 3%;
   margin: 0 auto;
 }
 
-.test-image {
-  background: url("../images/The Anatomy of a Question.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 800px;
-  width: auto;
-}
-.question-image-freebies {
+.question-image-gallery {
   background: url("../images/The Anatomy of a Question.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -821,7 +811,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.genesis-image-freebies {
+.genesis-image-gallery {
   background: url("../images/Genesis.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -829,7 +819,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.origin-image-freebies {
+.origin-image-gallery {
   background: url("../images/Origin.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -837,7 +827,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.hope-image-freebies {
+.hope-image-gallery {
   background: url("../images/Hope.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -845,7 +835,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.identity-image-freebies {
+.identity-image-gallery {
   background: url("../images/Identity.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -853,7 +843,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.destination-image-freebies {
+.destination-image-gallery {
   background: url("../images/Destination.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -861,7 +851,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.light-image-freebies {
+.light-image-gallery {
   background: url("../images/Light_your_world.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -869,7 +859,7 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.trust-issues-image-freebies {
+.trust-issues-image-gallery {
   background: url("../images/Trust-Issues.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -877,24 +867,8 @@ select:-webkit-autofill:focus {
   height: 400px;
   width: auto;
 }
-.different-image-freebies {
-  background: url("../images/The Anatomy of a Question.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
-  width: auto;
-}
-.the-king-image-freebies {
-  background: url("../images/The Anatomy of a Question.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
-  width: auto;
-}
 
-.freebies .freebies-header {
+.gallery .gallery-header {
   line-height: 0.8em;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 800;
@@ -906,7 +880,7 @@ select:-webkit-autofill:focus {
   width: 60%;
 }
 
-.freebies .freebies-header-tagline {
+.gallery .gallery-header-tagline {
   line-height: 1.3em;
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
@@ -917,7 +891,7 @@ select:-webkit-autofill:focus {
   width: 50%;
 }
 
-.freebies .freebies-header-tagline a {
+.gallery .gallery-header-tagline a {
   line-height: 1em;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 700;
@@ -926,22 +900,25 @@ select:-webkit-autofill:focus {
   color: #fff;
 }
 
-.freebies .freebies-header-tagline a:hover {
+.gallery .gallery-header-tagline a:hover {
   color: #ffdb26;
   text-decoration: none;
   background-color: #1f544d;
 }
-.freebies .freebies-header-tagline kbd {
+.gallery .gallery-header-tagline kbd {
   font-size: 0.7em;
   background-color: #1f544d;
 }
-.freebies .freebies-header-tagline kbd:hover {
+.gallery .gallery-header-tagline kbd:hover {
   background-color: #1f544d;
 }
 
-.freebies .list-group {
-  background-color: rgba(255, 255, 255, 0.589);
-  padding: 3px 5px;
+ .gallery .link-container {
+      padding: 15px;
+    }
+
+.gallery .list-group {
+  padding: 0px 5px;
   border-radius: 3px;
   opacity: 0;
   max-height: 0;
@@ -951,7 +928,8 @@ select:-webkit-autofill:focus {
     max-height cubic-bezier(0.46, 0.09, 0.27, 1) 1s 0.3s;
 }
 
-.freebies .link-container:hover > .list-group {
+.gallery .link-container:hover > .list-group {
+  margin: 10px 0 0 0;
   min-height: 125px;
   max-height: 200px;
   opacity: 1;
@@ -960,22 +938,22 @@ select:-webkit-autofill:focus {
     max-height cubic-bezier(0.46, 0.09, 0.27, 1) 0.6s 0.1s;
 }
 
-.freebies .image-title {
+.gallery .image-title {
   border: 0;
   border-radius: 3px;
   background-color: transparent;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 700;
 }
-.freebies .list-group-item {
+.gallery .list-group-item {
   border: 0;
   border-radius: 3px;
-  padding: 3px;
+  padding: 3px 3px 0 3px;
   margin: 0;
   background-color: transparent;
 }
 
-.freebies .card-link {
+.gallery .card-link {
   display: block;
   border: 0;
   border-radius: 3px;
@@ -983,21 +961,25 @@ select:-webkit-autofill:focus {
   color: #fff;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 500;
-  background-color: #1f544d;
-  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.295),
+  background-color: #1b3a32;
+  box-shadow: -40px 10px 50px rgba(0, 0, 0, 0.164),
     -30px 10px 30px rgba(0, 0, 0, 0.151),
-    -5px -10px 115px rgba(0, 0, 0, 0.65) inset;
+    -5px -10px 115px rgba(0, 0, 0, 0.164) inset;
 }
 
-.freebies .card-link:hover,
-.freebies .card-link:focus {
+.gallery .card-link:hover,
+.gallery .card-link:focus {
   color: #ffdb26;
   text-decoration: none;
   box-shadow: none;
 }
 
-.freebies .list-group-item .fa {
+.gallery .list-group-item .fa {
   padding-right: 5px;
+}
+
+.list-group-flush {
+  margin: 0;
 }
 
 /*----------------------------------------------Custom Scrollbar----------------------------------------*/
@@ -1345,9 +1327,16 @@ select:-webkit-autofill:focus {
   }
 
   @media (max-width: 1375px) {
-    .freebies .list-group {
+    .link-container {
+      text-align: center;
+    }
+
+    .gallery .list-group {
       opacity: 1;
       max-height: 500px;
+      max-width: 400px;
+      margin: 10px 0 0 0;
+      display: inline-block;
     }
   }
 
@@ -1595,13 +1584,13 @@ select:-webkit-autofill:focus {
     width: 100%;
   }
 
-  .freebies .freebies-header {
+  .gallery .gallery-header {
     line-height: 0.8em;
     font-size: 4em;
     width: 80%;
   }
 
-  .freebies .freebies-header-tagline {
+  .gallery .gallery-header-tagline {
     line-height: 1.3em;
     font-size: 1.3em;
     width: 60%;
@@ -1612,13 +1601,13 @@ select:-webkit-autofill:focus {
   .breakpoint-large {
     display: none;
   }
-  .freebies .freebies-header {
+  .gallery .gallery-header {
     line-height: 0.8em;
     font-size: 3em;
     width: 100%;
   }
 
-  .freebies .freebies-header-tagline {
+  .gallery .gallery-header-tagline {
     line-height: 1.3em;
     font-size: 1.3em;
     width: 100%;
