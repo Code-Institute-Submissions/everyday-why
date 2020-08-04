@@ -149,7 +149,7 @@ hr {
 }
 
 .logo {
-  background: url("../images/EverydayWhyLogo-05.svg");
+  background: url("../assets/images/EverydayWhyLogo-05.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -348,7 +348,7 @@ hr {
 }
 
 .question-image {
-  background: url("../images/The Anatomy of a Question.png");
+  background: url("../assets/images/The Anatomy of a Question.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -358,7 +358,7 @@ hr {
   background-color: transparent;
 }
 .genesis-image {
-  background: url("../images/Genesis.png");
+  background: url("../assets/images/Genesis.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -368,7 +368,7 @@ hr {
   background-color: transparent;
 }
 .identity-image {
-  background: url("../images/Identity.png");
+  background: url("../assets/images/Identity.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -378,7 +378,7 @@ hr {
   background-color: transparent;
 }
 .origin-image {
-  background: url("../images/Origin.png");
+  background: url("../assets/images/Origin.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -388,7 +388,7 @@ hr {
   background-color: transparent;
 }
 .destination-image {
-  background: url("../images/Destination.png");
+  background: url("../assets/images/Destination.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -398,7 +398,7 @@ hr {
   background-color: transparent;
 }
 .hope-image {
-  background: url("../images/Hope.png");
+  background: url("../assets/images/Hope.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -408,7 +408,7 @@ hr {
   background-color: transparent;
 }
 .trust-issues-image {
-  background: url("../images/Trust-Issues.png");
+  background: url("../assets/images/Trust-Issues.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -418,7 +418,7 @@ hr {
   background-color: transparent;
 }
 .light-image {
-  background: url("../images/Light_your_world.png");
+  background: url("../assets/images/Light_your_world.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -428,7 +428,7 @@ hr {
   background-color: transparent;
 }
 .different-think-image {
-  background: url("../images/Trust-Issues.png");
+  background: url("../assets/images/Trust-Issues.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -438,7 +438,7 @@ hr {
   background-color: transparent;
 }
 .the-king-image {
-  background: url("../images/Trust-Issues.png");
+  background: url("../assets/images/Trust-Issues.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -804,7 +804,7 @@ select:-webkit-autofill:focus {
 }
 
 .question-image-gallery {
-  background: url("../images/The Anatomy of a Question.png");
+  background: url("../assets/images/The Anatomy of a Question.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -812,7 +812,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .genesis-image-gallery {
-  background: url("../images/Genesis.png");
+  background: url("../assets/images/Genesis.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -820,7 +820,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .origin-image-gallery {
-  background: url("../images/Origin.png");
+  background: url("../assets/images/Origin.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -828,7 +828,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .hope-image-gallery {
-  background: url("../images/Hope.png");
+  background: url("../assets/images/Hope.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -836,7 +836,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .identity-image-gallery {
-  background: url("../images/Identity.png");
+  background: url("../assets/images/Identity.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -844,7 +844,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .destination-image-gallery {
-  background: url("../images/Destination.png");
+  background: url("../assets/images/Destination.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -852,7 +852,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .light-image-gallery {
-  background: url("../images/Light_your_world.png");
+  background: url("../assets/images/Light_your_world.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -860,7 +860,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .trust-issues-image-gallery {
-  background: url("../images/Trust-Issues.png");
+  background: url("../assets/images/Trust-Issues.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -913,12 +913,12 @@ select:-webkit-autofill:focus {
   background-color: #1f544d;
 }
 
- .gallery .link-container {
-      padding: 15px;
-    }
+.gallery .link-container {
+  padding: 25px 15px 15px;
+}
 
 .gallery .list-group {
-  padding: 0px 5px;
+  padding: 5px 5px;
   border-radius: 3px;
   opacity: 0;
   max-height: 0;
@@ -929,7 +929,6 @@ select:-webkit-autofill:focus {
 }
 
 .gallery .link-container:hover > .list-group {
-  margin: 10px 0 0 0;
   min-height: 125px;
   max-height: 200px;
   opacity: 1;
