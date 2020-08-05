@@ -1680,9 +1680,9 @@ select:-webkit-autofill:focus {
 .hope-image,
 .trust-issues-image,
 .light-image {
-  background-size: 200px 200px;
-  min-height: 200px;
-  height: 200px;
+  background-size: 250px 250px;
+  min-height: 250px;
+  height: 250px;
   margin: 10px 0px; 
 }
 
