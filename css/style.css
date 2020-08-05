@@ -427,26 +427,6 @@ hr {
   margin: 50px 0px;
   background-color: transparent;
 }
-.different-think-image {
-  background: url("../assets/images/Trust-Issues.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 500px 500px;
-  min-height: 500px;
-  height: 500px;
-  margin: 50px 0px;
-  background-color: transparent;
-}
-.the-king-image {
-  background: url("../assets/images/Trust-Issues.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 500px 500px;
-  min-height: 500px;
-  height: 500px;
-  margin: 50px 0px;
-  background-color: transparent;
-}
 
 .article-block .panel-group .panel .panel-heading a:before {
   float: right;
@@ -1594,6 +1574,23 @@ select:-webkit-autofill:focus {
     font-size: 1.3em;
     width: 60%;
   }
+}
+
+@media (max-width: 600px) {
+.question-image,
+.genesis-image,
+.identity-image,
+.origin-image,
+.destination-image,
+.hope-image,
+.trust-issues-image,
+.light-image {
+  background-size: 400px 400px;
+  min-height: 400px;
+  height: 400px;
+  margin: 40px 0px; 
+}
+
 }
 
 @media (max-width: 465px) {
