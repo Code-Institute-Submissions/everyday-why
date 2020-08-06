@@ -523,14 +523,14 @@ footer .newsletter form input {
   background-color: transparent;
   border: none;
   font-size: 0.8em;
-  text-decoration-style: underline;
+  text-decoration: underline;
   margin: 0;
 }
 footer .newsletter form input[type="text"] {
   background-color: transparent;
   border: none;
   font-size: 0.5em;
-  text-decoration-style: underline;
+  text-decoration: underline;
   outline: none;
   width: 65%;
 }
@@ -696,7 +696,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   border: none;
   font-size: 0.6em;
-  text-decoration-style: underline;
+  text-decoration: underline;
   margin-top: 20px;
 }
 .say-hello form input:active,
@@ -709,7 +709,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   border: none;
   font-size: 1em;
-  text-decoration-style: underline;
+  text-decoration: underline;
   outline: none;
   width: 80%;
 }
@@ -779,7 +779,7 @@ select:-webkit-autofill:focus {
 /*----------------------------------------------gallery Page----------------------------------------*/
 
 .gallery {
-  padding: 5% 3%;
+  padding: 3% 3%;
   margin: 0 auto;
 }
 
@@ -1329,7 +1329,7 @@ select:-webkit-autofill:focus {
       background-color: transparent;
       border: none;
       font-size: 0.5em;
-      text-decoration-style: underline;
+      text-decoration: underline;
       outline: none;
       width: 70%;
       max-width: 500px;
