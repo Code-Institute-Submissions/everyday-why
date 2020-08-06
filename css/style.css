@@ -348,7 +348,7 @@ hr {
 }
 
 .question-image {
-  background: url("../assets/images/The Anatomy of a Question.png");
+  background: url("../assets/images/The-Anatomy-of-a-Question.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -418,7 +418,7 @@ hr {
   background-color: transparent;
 }
 .light-image {
-  background: url("../assets/images/Light_your_world.png");
+  background: url("../assets/images/Light-your-world.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 500px;
@@ -523,19 +523,19 @@ footer .newsletter form input {
   background-color: transparent;
   border: none;
   font-size: 0.8em;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 0;
 }
 footer .newsletter form input[type="text"] {
   background-color: transparent;
   border: none;
   font-size: 0.5em;
-  text-decoration: underline;
+  text-decoration: none;
   outline: none;
   width: 65%;
 }
 
-footer .newsletter form #email {
+footer .newsletter form #footer-email {
   border-bottom: 1px solid #1b3a32;
   padding-top: 10px;
   margin: 0;
@@ -696,7 +696,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   border: none;
   font-size: 0.6em;
-  text-decoration: underline;
+  text-decoration: none;
   margin-top: 20px;
 }
 .say-hello form input:active,
@@ -709,7 +709,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   border: none;
   font-size: 1em;
-  text-decoration: underline;
+  text-decoration: none;
   outline: none;
   width: 80%;
 }
@@ -733,8 +733,9 @@ select:-webkit-autofill:focus {
 
 .say-hello form #fname,
 .say-hello form #lname,
-.say-hello form #email,
+.say-hello form #newsletter-email,
 .say-hello form #confirm-email,
+.say-hello form #question-email,
 .say-hello form #message {
   padding-top: 30px;
   border-bottom: 1px solid #457165;
@@ -784,7 +785,7 @@ select:-webkit-autofill:focus {
 }
 
 .question-image-gallery {
-  background: url("../assets/images/The Anatomy of a Question.png");
+  background: url("../assets/images/The-Anatomy-of-a-Question.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -832,7 +833,7 @@ select:-webkit-autofill:focus {
   width: auto;
 }
 .light-image-gallery {
-  background: url("../assets/images/Light_your_world.png");
+  background: url("../assets/images/Light-your-world.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1329,7 +1330,7 @@ select:-webkit-autofill:focus {
       background-color: transparent;
       border: none;
       font-size: 0.5em;
-      text-decoration: underline;
+      text-decoration: none;
       outline: none;
       width: 70%;
       max-width: 500px;
