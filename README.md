@@ -2,6 +2,8 @@
 
 ##### Click logo above to view live project
 
+<h2 align="center"><img src="assets/images/Responsive-screenshot.png"></h2>
+
 EverydayWhy is a passion project that sits at the intersection between a Personal Design Diary and Christian Apologetics. According to Wikipedia, Christian apologetics is a branch of Christian theology that defends Christianity against objections.
 
 As a visual artist I have always struggled with finding subject matter that represents my interests and defines my belief system. I stumbled upon Chrsitian Apologetics and found its focus both exciting and challenging to represent from the eye of a creator. EverydayWhy is born of that desire to represent my thoughts, questions and perceptions about life in a way that would hopefully be of interest to designers, design enthusiasts, christians and all those with similar questions.
@@ -36,7 +38,7 @@ I am grateful for the knowledge I have gained so far on this course as it has en
 - ### Design
     - #### Colour Scheme
         -   The colour scheme across the website is a combination of gradients and solid fills based on the colours below.  
-        <h2><img src="assets/images/Colour Palette.png"></h2>
+        <h2><img src="assets/images/Colour-Palette.png"></h2>
     - #### Typography
         -   The Google fonts Libre Franklin and Roboto Mono are the two fonts used across the website with Sans Serif and Monospace as the alternative fonts respectively, for cases when the default options aren't loaded onto the website correctly.
         Both fonts are very legible and contrast nicely together. With Libre Franklin serving as the primary font for headlines and titles and Roboto Mono as the body text. 
@@ -47,7 +49,7 @@ I am grateful for the knowledge I have gained so far on this course as it has en
 
 *   ### Wireframes
 
-    Initial Wireframes developed at the start of the project are <a href="assets/images/Rex Abba-Abba Milestone Project Wireframe.pdf" download>here.</a> One difference that can be observed is that I decided to make the Downloads & Resources page into the homepage which is now called Gallery. This choice to help easy navigation and provide a more welcoming homepage with appealing images. 
+    Initial Wireframes developed at the start of the project are <a href="assets/images/RexAbba-AbbaMilestoneProjectWireframe.pdf" download>here.</a> One difference that can be observed is that I decided to make the Downloads & Resources page into the homepage which is now called Gallery. This choice to help easy navigation and provide a more welcoming homepage with appealing images. 
 
   
 

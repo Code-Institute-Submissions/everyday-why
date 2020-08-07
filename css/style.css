@@ -184,7 +184,6 @@ hr {
   border-radius: 3px;
   font-size: 10px;
   font-weight: 900;
-  transform-origin: left bottom length 0;
   transform: rotate(90deg);
   text-transform: uppercase;
   margin: 0 auto;
@@ -327,6 +326,12 @@ hr {
   width: 100%;
   padding-right: 0;
   letter-spacing: 0px;
+  display:block;
+  position: relative;
+  height:100%;
+  left: 0;
+  top: 0;
+
 }
 
 .article-block .panel-group .panel .panel-body {
@@ -428,7 +433,7 @@ hr {
   background-color: transparent;
 }
 
-.article-block .panel-group .panel .panel-heading a:before {
+.article-block .panel-group .panel .panel-heading .panel-title a:before {
   float: right;
   font-family: FontAwesome;
   content: "\f0d8";
@@ -439,8 +444,9 @@ hr {
 .article-block
   .panel-group
   .panel
-  .panel-heading[aria-expanded="false"]
-  a:before {
+  .panel-heading
+  .panel-title
+  a[aria-expanded="false"]:before {
   float: right;
   content: "\f0d7";
 }
@@ -924,6 +930,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 700;
+  list-style-type: none;
 }
 .gallery .list-group-item {
   border: 0;
