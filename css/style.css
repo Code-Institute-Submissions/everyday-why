@@ -1,12 +1,13 @@
+/*----------------------------------------------Google fonts start here----------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin: 100,200,300,400,500,600,700,800,900 &display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono: 100,200,300,400,500,600,700,800,900 &display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+/*----------------------------------------------Google fonts end here----------------------------------------*/
 
-/*----------------------------------------------Utilities----------------------------------------*/
 body {
   position: relative;
 }
 
+/*----------------------------------------------Utilities start here----------------------------------------*/
 kbd {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
@@ -22,9 +23,9 @@ mark {
 hr {
   border: 1px solid #ffdb26;
 }
+/*----------------------------------------------Utilities end here----------------------------------------*/
 
-/*----------------------------------------------Header----------------------------------------*/
-
+/*----------------------------------------------Responsive navigation bar starts here----------------------------------------*/
 .navbar {
   border-radius: 0;
   margin: 0 auto;
@@ -197,9 +198,9 @@ hr {
   background-color: #ffdb26;
   text-decoration: none;
 }
+/*----------------------------------------------Responsive navigation bar ends here----------------------------------------*/
 
-/*----------------------------------------------Jumbotron----------------------------------------*/
-
+/*----------------------------------------------Welcome quote and About section starts here----------------------------------------*/
 .jumbotron {
   margin: 0 auto;
   border: 0;
@@ -277,9 +278,9 @@ hr {
   left: 100px;
   mix-blend-mode: darken;
 }
+/*----------------------------------------------Welcome quote and About section ends here----------------------------------------*/
 
-/*----------------------------------------------Articles----------------------------------------*/
-
+/*----------------------------------------------Articles start here----------------------------------------*/
 .article-collection-bg {
   padding: 5% 3%;
 }
@@ -326,12 +327,11 @@ hr {
   width: 100%;
   padding-right: 0;
   letter-spacing: 0px;
-  display:block;
+  display: block;
   position: relative;
-  height:100%;
+  height: 100%;
   left: 0;
   top: 0;
-
 }
 
 .article-block .panel-group .panel .panel-body {
@@ -463,9 +463,9 @@ hr {
   -o-transition-timing-function: cubic-bezier(0.14, 0.01, 0.5, 1.01);
   transition-timing-function: cubic-bezier(0.14, 0.01, 0.5, 1.01);
 }
+/*----------------------------------------------Articles end here----------------------------------------*/
 
-/*----------------------------------------------Footer----------------------------------------*/
-
+/*----------------------------------------------Footer starts here----------------------------------------*/
 footer {
   color: #1b3a32;
   padding: 40px 3%;
@@ -596,9 +596,9 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: #1b3a32;
   transition: background-color 5000s ease-in-out 0s;
 }
+/*----------------------------------------------Footer ends here----------------------------------------*/
 
-/*----------------------------------------------Say-Hello----------------------------------------*/
-
+/*----------------------------------------------Say Hello modal with contact form starts here----------------------------------------*/
 .modal-header {
   position: relative;
   margin: 30px 0;
@@ -782,9 +782,9 @@ select:-webkit-autofill:focus {
   padding-top: 3.6em;
   padding-bottom: 3.6em;
 }
+/*----------------------------------------------Say Hello modal with contact form ends here----------------------------------------*/
 
-/*----------------------------------------------gallery Page----------------------------------------*/
-
+/*----------------------------------------------Article image gallery starts here----------------------------------------*/
 .gallery {
   padding: 3% 3%;
   margin: 0 auto;
@@ -968,9 +968,9 @@ select:-webkit-autofill:focus {
 .list-group-flush {
   margin: 0;
 }
+/*----------------------------------------------Article image gallery ends here----------------------------------------*/
 
-/*----------------------------------------------Custom Scrollbar----------------------------------------*/
-
+/*----------------------------------------------Custom Scrollbar starts here - https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp----------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -993,9 +993,9 @@ select:-webkit-autofill:focus {
   background: rgba(255, 255, 255, 0.521);
   border: 1px solid;
 }
+/*----------------------------------------------Custom Scrollbar ends here - https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp----------------------------------------*/
 
-/*----------------------------------------------Accent colours----------------------------------------*/
-
+/*----------------------------------------------Accent colours start here----------------------------------------*/
 .happy {
   background-image: linear-gradient(to bottom left, #cbe4de, #ffdb26);
 }
@@ -1041,8 +1041,9 @@ select:-webkit-autofill:focus {
     #fff
   ) !important;
 }
+/*----------------------------------------------Accent colours end here----------------------------------------*/
 
-/*----------------------------------------------Animations for dropdown menu----------------------------------------*/
+/*----------------------------------------------Animations for dropdown menu start here----------------------------------------*/
 /* fade-in animation keyframes */
 @keyframes colour-fade-in {
   from {
@@ -1299,8 +1300,9 @@ select:-webkit-autofill:focus {
   -o-animation: fade-in ease-in 1.3s forwards;
   -ms-animation: fade-in ease-in 1.3s forwards;
 }
+/*----------------------------------------------Animations for dropdown menu end here----------------------------------------*/
 
-/*----------------------------------------------Media Queries----------------------------------------*/
+/*----------------------------------------------Media Queries below----------------------------------------*/
 
 @media (min-width: 1099px) {
   #nav-collapsible .dropdown:hover > .dropdown-menu {
@@ -1585,20 +1587,19 @@ select:-webkit-autofill:focus {
 }
 
 @media (max-width: 600px) {
-.question-image,
-.genesis-image,
-.identity-image,
-.origin-image,
-.destination-image,
-.hope-image,
-.trust-issues-image,
-.light-image {
-  background-size: 300px 300px;
-  min-height: 300px;
-  height: 300px;
-  margin: 30px 0px; 
-}
-
+  .question-image,
+  .genesis-image,
+  .identity-image,
+  .origin-image,
+  .destination-image,
+  .hope-image,
+  .trust-issues-image,
+  .light-image {
+    background-size: 300px 300px;
+    min-height: 300px;
+    height: 300px;
+    margin: 30px 0px;
+  }
 }
 
 @media (max-width: 465px) {
@@ -1680,18 +1681,17 @@ select:-webkit-autofill:focus {
 }
 
 @media (max-width: 320px) {
-.question-image,
-.genesis-image,
-.identity-image,
-.origin-image,
-.destination-image,
-.hope-image,
-.trust-issues-image,
-.light-image {
-  background-size: 250px 250px;
-  min-height: 250px;
-  height: 250px;
-  margin: 10px 0px; 
-}
-
+  .question-image,
+  .genesis-image,
+  .identity-image,
+  .origin-image,
+  .destination-image,
+  .hope-image,
+  .trust-issues-image,
+  .light-image {
+    background-size: 250px 250px;
+    min-height: 250px;
+    height: 250px;
+    margin: 10px 0px;
+  }
 }
