@@ -258,10 +258,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - [HTML & CSS](https://www.w3schools.com/): I researched a lot of code support from W3 Schools. Additional research on CSS was done on [CSS Tricks](https://css-tricks.com/)
 
 - jQuery: To aid DOM manipulation and automation in certain areas I needed to use jQuery and I repurposed code from the sources below.
-    - Code Pen - [Scroll to top of page](https://codepen.io/deveb22/pen/QxPmGz), [Animate "About" on click](https://codepen.io/steveberrill/pen/owKeVE)
-    - Stack Overflow - [Smooth scroll to active article]( https://stackoverflow.com/questions/35992900/bootstrap-accordion-scroll-to-top-of-active-open-accordion-on-click)
-    - CSS Tricks - [Smooth scroll to articles from "Questions &  Anecdotes" dropdown menu](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
-    - Github - [Opens Article on "Questions &  Anecdotes" page when "Go to Article" for each image](https://gist.github.com/raddevon/8958486)
+  - Code Pen - [Scroll to top of page](https://codepen.io/deveb22/pen/QxPmGz), [Animate "About" on click](https://codepen.io/steveberrill/pen/owKeVE)
+  - Stack Overflow - [Smooth scroll to active article](https://stackoverflow.com/questions/35992900/bootstrap-accordion-scroll-to-top-of-active-open-accordion-on-click)
+  - CSS Tricks - [Smooth scroll to articles from "Questions & Anecdotes" dropdown menu](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+  - Github - [Opens Article on "Questions & Anecdotes" page when "Go to Article" for each image](https://gist.github.com/raddevon/8958486)
 
 ## Credits
 
@@ -275,4 +275,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledgements
 
-- I received inspiration for this project from websites like the rzim.org, theschooloflife.com, wearelisten.com and thebibleproject.com
+- I received inspiration for this project from websites like [Ravi Zacharias Ministries](https://www.rzim.org/),[The School of Life](https://www.theschooloflife.com) and [The Bible Project](https://www.thebibleproject.com). The use of an accordion for the [Question & Anecdotes](https://rexayo.github.io/everyday-why/questions-anecdotes.html) page was inspired in part by the layout of [We are Listen](https://www.wearelisten.com).
