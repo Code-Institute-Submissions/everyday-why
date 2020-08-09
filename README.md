@@ -6,13 +6,13 @@
 
 EverydayWhy is a passion project that sits at the intersection between a Personal Design Diary and Christian Apologetics. According to Wikipedia, Christian apologetics is a branch of Christian theology that defends Christianity against objections.
 
-As a visual artist I have always struggled with finding subject matter that represents my interests and defines my belief system. I stumbled upon Chrsitian Apologetics and found its focus both exciting and challenging to represent from the eye of a creator. EverydayWhy is born of that desire to represent my thoughts, questions and perceptions about life in a way that would hopefully be of interest to designers, design enthusiasts, christians and all those with similar questions.
+As a visual artist I have always struggled with finding subject matter that represents my interests and defines my belief system. I stumbled upon Chrsitian apologetics and found its focus both exciting and challenging to represent from the eye of a creator. EverydayWhy is born of that desire to represent my thoughts, questions and perceptions about life in a way that would hopefully be of interest to designers, design enthusiasts, christians and all those with similar questions.
 
-As a personal design diary, I also intend to use it as a platform to share my knowledge on my preferred design tools, primarily Side FX Houdini and Adobe After Effects . Knowledge about using Houdini as a design tool isn't so commom place and I feel that it would be a nice addition to make my project files available for download. Also, a future update would be to add a section for tutorials
+As a personal design diary, I also intend to use it as a platform to share my knowledge on my preferred design tools, primarily Side FX Houdini and Adobe After Effects. Knowledge about using Houdini as a design tool is not so commom place and I feel that it would be a nice addition to make my project files available for download. A future update will be to add a section for tutorials.
 
-It is my desire that I can create a hub to share my journey in visual communication, as well as, making an online space that represents my interests and skills, so as to also attract design collaborations and commisions from people with similar interests.
+It is my desire that I can create a hub to share my journey in visual communication, as well as, making an online space that represents my interests and skills, so as to also attract design collaborations and commissions from people with similar interests.
 
-I am grateful for the knowledge I have gained so far on this course as it has enabled create something that was only just an imagination a few months ago.
+I am grateful for the knowledge I have gained so far on this course as it has enabled me create something that was only just an imagination a few months ago.
 
 ## User Experience (UX)
 
@@ -42,24 +42,24 @@ I am grateful for the knowledge I have gained so far on this course as it has en
     - The Google fonts Libre Franklin and Roboto Mono are the two fonts used across the website with Sans Serif and Monospace as the alternative fonts respectively, for cases when the default options aren't loaded onto the website correctly.
       Both fonts are very legible and contrast nicely together. With Libre Franklin serving as the primary font for headlines and titles and Roboto Mono as the body text.
   - #### Imagery
-    - Images across the website play a huge role and a created to be analogous to the sites colour palette.
+    - Images across the website play a huge role and are created to be analogous to the sites colour palette.
   - #### Negative Space
-    - Negative Space helps to give the viewer some breathing space between both the images and Article section which typical has a lot of text.
+    - Negative Space helps to give the viewer some breathing space between both the images and article section which typically has a lot of text.
 
 - ### Wireframes
 
-  Initial Wireframes developed at the start of the project are <a href="assets/images/RexAbba-AbbaMilestoneProjectWireframe.pdf" download>here.</a> One difference that can be observed is that I decided to make the Downloads & Resources page into the homepage which is now called Gallery. This choice to help easy navigation and provide a more welcoming homepage with appealing images.
+  Initial Wireframes developed at the start of the project are <a href="assets/images/RexAbba-AbbaMilestoneProjectWireframe.pdf" download>here.</a> One difference that can be observed is that I decided to make the Downloads & Resources page into the homepage which is now called Gallery. This choice was to help easy navigation and provide a more welcoming homepage with appealing images.
 
 ## Features
 
-This section contains all the features of the website
+This section contains all the features of the website.
 
 ### Gallery
 
 This is the homepage and hub for all the images and downloads. Each image has three anchor tags:
 
-- A download link to a high resolution version of the image.
-- A download link to the project files and assets used to make the image and
+- A download link to a high resolution version of the image;
+- A download link to the project files and assets used to make the image and;
 - A link that takes to the user to the related article.
 
 ### Questions & Anecdotes
@@ -69,14 +69,14 @@ Each article is intended to inspire or ignite more questions.
 
 ### About
 
-This has a little bit of a bit of information concerning me and the motivation behind the EverydayWhy.
+This has a bit of information concerning me and the motivation behind the EverydayWhy.
 
 ### Say Hello
 
 This page contains features that helps the user make inquiries, sign up for email updates and follow social media handles.
 The implementation uses Bootstrap's modal with three main features:
 
-- An inquiry form which allows user to ask questions or send comments by filling out required fields.
+- An inquiry form which allows users to ask questions or send comments by filling out required fields.
 - A email field which enables users sign up for a newsletter.
 - Icons with links to EverydayWhy's social media platforms.
 
@@ -135,7 +135,7 @@ The implementation uses Bootstrap's modal with three main features:
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. No errors were found during the validation process, but a few warnings were flagged related certain to sections not having header tags on the html pages and autoprefixing issues on the css document. These were intentional choices and they don't affect the functionality of the website.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. No errors were found during the validation process, but a few warnings were flagged relating to certain sections not having header tags on the html pages and autoprefixing issues on the css document. These were intentional choices and they don't affect the functionality of the website.
 
 - [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
@@ -150,13 +150,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
-        2. An image grid on the homepage presents a colourful array of all artowrk representing all articles on the website.
+        2. An image grid on the homepage presents a colourful array of all artwork representing all articles on the website.
         3. The user has three options per image, download high resolution image, download project files and go to article which takes the user straight to the article on the questions and anecdotes page.
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+    2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of each page there is a "back to top" button to help easy scrolling when for long pages and is particularly helpful on mobile devices.
+        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link is clearly descriptive of what it contains.
+        2. At the bottom of each page there is a "back to top" button to aid easy scrolling especially for when pages get very long. It is particularly helpful on mobile devices.
         3. On the Say Hello Page, after a form response is submitted, the page refreshes and the user is brought back to the previous page.
 
     3.  As a First Time Visitor, I want to easily find information about the creators of the website and I want to be able to easily locate their social media links to see their followings on social media to determine how trusted and known they are.
