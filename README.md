@@ -146,53 +146,50 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - #### First Time Visitor Goals
 
-  1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the creators.
+  1. As a First Time Visitor, I want to understand the main purpose of the site easily and learn more about the creators.
 
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
         2. An image grid on the homepage presents a colourful array of all artwork representing all articles on the website.
-        3. The user has three options per image, download high resolution image, download project files and go to article which takes the user straight to the article on the questions and anecdotes page.
+        3. The user has three options per image; download high resolution image, download project files and go to article, which takes the user straight to the article on the questions and anecdotes page.
 
     2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link is clearly descriptive of what it contains.
-        2. At the bottom of each page there is a "back to top" button to aid easy scrolling especially for when pages get very long. It is particularly helpful on mobile devices.
-        3. On the Say Hello Page, after a form response is submitted, the page refreshes and the user is brought back to the previous page.
+        2. At the bottom of each page there is a "back to top" button to aid easy scrolling especially for when pages get very long. This is particularly helpful on mobile devices.
+        3. On the Say Hello page, after a form response is submitted, the page refreshes and the user is brought back to the original page before completing the form.
 
-    3.  As a First Time Visitor, I want to easily find information about the creators of the website and I want to be able to easily locate their social media links to see their followings on social media to determine how trusted and known they are.
+    3.  As a First Time Visitor, I want to easily find information about the website's creators and easily locate their social media links to see their social media followings, in order to determine how trusted and known they are.
 
-. 1. Once the new visitor has visited the Say Hello page, they will notice the social media links. 2. Additionally there are social media links at the footer of all pages except the Say Hello page where it is in the body of the page.
+        1. Once the new visitor has visited the Say Hello page, they will notice the social media links.
+        2. Additionally there are social media links at the footer of all pages except the Say Hello page where it is in the body of the page.
 
 - #### Returning Visitor Goals
 
   1. As a Returning Visitor, I want to be able to easily download images and project files.
 
-     1. These are clearly shown below each image on the homepage
+     1. These are clearly shown below each image presented on the homepage.
 
   2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
 
      1. The navigation bar clearly highlights the "Say Hello" Page.
-     2. Here they can fill out the "questions or comments" form on the page or are told that alternatively they can follow the website on social media.
+     2. Here they can fill out the "questions or comments" form on the page or use alternative options such as following on social media where contact can also be made with the oraganisation.
      3. The footer contains links to the organisations Facebook and Instagram page as well as the website's email.
-     4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-     5. The email button on the footer is set up to automatically open up your email app and autofill there email address in the "To" section.
+     4. Whichever link is clicked on from the Say Hello page is opened up in a new tab to ensure the user can easily get back to the website.
+     5. The email button on the footer is set up to automatically open up your email app and autofill the website's email address in the "To" section.
 
 * #### Frequent User Goals
 
   1. As a Frequent User, I want to check to see if there are any newly added articles or images.
 
-     1. The user would already be comfortable with the website layout and can easily click the banner message.
-
-  2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-
-     1. The user would already be comfortable with the website layout and can easily click the blog link
-
-  3. As a Frequent User, I want to check to see if there are any newly added articles or images.
-
      1. At the bottom of every page there is a footer which content is consistent throughout all pages.
      2. To the left hand side of the footer the user can see "Join our Newsletter" and are prompted to Enter their email address.
      3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
      4. Additional on the "Say Hello" there is a form with a header called "Stay in the Loop" which has also an input field that prompts users to enter their email address. There is also a "Submit" button the right hand side of the input field.
+
+  2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+
+     1. The user would already be comfortable with the website layout and can easily click the blog link
 
 ### Further Testing
 
