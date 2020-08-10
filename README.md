@@ -176,7 +176,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
      2. Here they can fill out the "questions or comments" form on the page or use alternative options such as following on social media where contact can also be made with the oraganisation.
      3. The footer contains links to the organisations Facebook and Instagram page as well as the website's email.
      4. Whichever link is clicked on from the Say Hello page is opened up in a new tab to ensure the user can easily get back to the website.
-     5. The email button on the footer is set up to automatically open up your email app and autofill the website's email address in the "To" section.
+     5. The email button on the footer is set up to automatically open up user's email app and autofill the website's email address in the "To" section.
 
 * #### Frequent User Goals
 
@@ -189,7 +189,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
   2. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
 
-     1. The user would already be comfortable with the website layout and can easily click the blog link
+     1. The user would already be comfortable with the website layout and can easily click the link to request Newsletter updates.
 
 ### Further Testing
 
@@ -214,7 +214,7 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository, a copy of the original repository on the GitHub account was made to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Rexayo/everyday-why)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
@@ -250,7 +250,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+- [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/): Bootstrap Library was used throughout the project mainly to make the website responsive using the Bootstrap Grid System.
 
 - [HTML & CSS](https://www.w3schools.com/): I researched a lot of code support from W3 Schools. Additional research on CSS was done on [CSS Tricks](https://css-tricks.com/)
 
@@ -258,13 +258,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
   - Code Pen - [Scroll to top of page](https://codepen.io/deveb22/pen/QxPmGz), [Animate "About" on click](https://codepen.io/steveberrill/pen/owKeVE)
   - Stack Overflow - [Smooth scroll to active article](https://stackoverflow.com/questions/35992900/bootstrap-accordion-scroll-to-top-of-active-open-accordion-on-click)
   - CSS Tricks - [Smooth scroll to articles from "Questions & Anecdotes" dropdown menu](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
-  - Github - [Opens Article on "Questions & Anecdotes" page when "Go to Article" for each image](https://gist.github.com/raddevon/8958486)
+  - Github - [Opens Article on "Questions & Anecdotes" page when "Go to Article" on each image is selected](https://gist.github.com/raddevon/8958486)
 
 ## Credits
 
 ### Content
 
-- The text for all articles were created by my wife and I.
+- The text for all articles were created by my wife and me.
 
 ### Media
 
