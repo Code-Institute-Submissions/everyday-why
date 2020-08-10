@@ -236,7 +236,7 @@ remote: Compressing objects: 100% (83/83), done.
 Receiving objects:  90% remote: Total 329 (delta 73), reused 109 (delta 44), pack-reused 189
 Receiving objects: 100% (329/329), 82.67 MiB | 6.53 MiB/s, done.
 Resolving deltas: 100% (153/153), done.
-
+```
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
